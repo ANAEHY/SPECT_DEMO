@@ -2,7 +2,7 @@ name: Update Tariff 15
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # 4:00 UTC ежедневно
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
