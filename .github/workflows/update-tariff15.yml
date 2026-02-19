@@ -1,0 +1,35 @@
+name: Update Tariff 15
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # 4:00 UTC ежедневно
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    
+    - name: Install requests
+      run: pip install requests
+    
+    - name: Update tariff15
+      run: python update_tariff15.py
+    
+    - name: Commit changes
+      run: |
+        git config user.name "vpn-bot"
+        git config user.email "bot@vpn.com"
+        git add tariff15.txt
+        if git diff --staged --quiet; then
+          echo "Нет изменений"
+        else
+          git commit -m "♻️ Update tariff15: 15 стран + белые $(date)"
+          git push
+        fi
