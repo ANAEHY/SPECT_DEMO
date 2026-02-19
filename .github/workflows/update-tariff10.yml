@@ -1,0 +1,35 @@
+name: Update Tariff 10
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Каждый день в 3:00 UTC (6:00 MSK)
+  workflow_dispatch:  # Ручной запуск
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    
+    - name: Install requests
+      run: pip install requests
+    
+    - name: Update tariff10
+      run: python update_tariff10.py
+    
+    - name: Commit changes
+      run: |
+        git config user.name "vpn-bot"
+        git config user.email "bot@yourrepo.com"
+        git add tariff10.txt
+        if git diff --staged --quiet; then
+          echo "Нет изменений"
+        else
+          git commit -m "♻️ Update tariff10: 10 random VLESS keys $(date)"
+          git push
+        fi
