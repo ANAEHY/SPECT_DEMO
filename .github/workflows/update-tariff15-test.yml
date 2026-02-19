@@ -2,7 +2,7 @@ name: Update Tariff 15 TEST
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # КАЖДЫЕ 5 МИНУТ!
+    - cron: '*/15 * * * *'  # КАЖДЫЕ 15 МИНУТ!
   workflow_dispatch:
 
 jobs:
