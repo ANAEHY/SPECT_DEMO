@@ -1,0 +1,10 @@
+mkdir vpn-tariff10
+cd vpn-tariff10
+git init
+echo "# VPN Tariff 10" > README.md
+touch tariff10.txt  # Пока пустой
+git add .
+git commit -m "Initial"
+git branch -M main
+git remote add origin https://github.com/ANAEHY/vpn-tariff10.git
+git push -u origin main
