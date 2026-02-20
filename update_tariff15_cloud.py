@@ -32,7 +32,6 @@ SNI_CIDR_SOURCES = [
     'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt'                    
 ]
 
-# ===== SPECTER VPN НАЗВАНИЕ ДЛЯ HAPP =====
 HEADER = """#profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 12"""
 
@@ -40,6 +39,20 @@ def is_cloudflare(config):
     """Исключаем Cloudflare"""
     cf_patterns = ['cloudflare', 'cf-ip', '1.1.1.1', '104.', '172.67.', '141.193.']
     return any(pattern in config.lower() for pattern in cf_patterns)
+
+def is_bad_sni_cidr(config):
+    """Исключаем anycast-ip + Эстония в конец"""
+    config_lower = config.lower()
+    
+    # ❌ БЛОКИРУЕМ anycast-ip (плохо работают!)
+    if 'anycast-ip' in config_lower:
+        return True
+    
+    # ❌ Эстония всегда ПОСЛЕДНЯЯ (очень плохо работает)
+    if any(pattern in config_lower for pattern in ['ee-', 'estonia', 'ee:', 'tallinn', '🇪🇪']):
+        return 'EE_LAST'
+    
+    return False
 
 def extract_country(config):
     """Расширенная сортировка стран"""
@@ -59,12 +72,12 @@ def extract_country(config):
             return country
     return 'OTHER'
 
-print("🚀 SPECTER VPN — 23 обычных + 12 SNI/CIDR в конце!")
+print("🚀 SPECTER VPN — ❌NO anycast-ip + 🇪🇪Эстония В КОНЕЦ!")
 
-# ===== 1. ПРИОРИТЕТНЫЕ БЛОКИ DE/NL/FR/RU (макс 3 на страну) =====
+# ===== 1. ПРИОРИТЕТНЫЕ БЛОКИ DE/NL/FR/RU =====
 priority_blocks = {'DE': [], 'NL': [], 'FR': [], 'RU': []}
 
-print("\n📥 ПРИОРИТЕТНЫЕ ИСТОЧНИКИ (DE/NL/FR/RU):")
+print("\n📥 ПРИОРИТЕТНЫЕ ИСТОЧНИКИ:")
 for i, source in enumerate(PRIORITY_SOURCES):
     print(f"  {i+1}. {source.split('/')[-1]}")
     try:
@@ -79,31 +92,43 @@ for i, source in enumerate(PRIORITY_SOURCES):
                     key = random.choice(country_lines)
                     if key not in priority_blocks[country]:
                         priority_blocks[country].append(key)
-                        print(f"     ✅ {country}: +1 (всего {len(priority_blocks[country])})")
+                        print(f"     ✅ {country}: +1")
     except:
         print(f"     ❌")
 
-# ===== 2. МАКСИМУМ SNI/CIDR (ПО 4 С КАЖДОГО = 12 ШТУК!) =====
+# ===== 2. SNI/CIDR С ФИЛЬТРАМИ (ПО 4 С КАЖДОГО!) =====
 sni_cidr_configs = []
-print("\n📥 SNI/CIDR (ПО 4 С КАЖДОГО = 12 ШТУК):")
+sni_cidr_ee = []  # Эстония отдельно в самый конец
+
+print("\n📥 SNI/CIDR (❌NO anycast-ip + 🇪🇪В КОНЕЦ):")
 for i, source in enumerate(SNI_CIDR_SOURCES):
     source_name = source.split('/')[-1]
     print(f"  {i+1}. {source_name}")
     try:
         resp = requests.get(source, timeout=10)
         lines = [l.strip() for l in resp.text.splitlines()[3:] if l.strip()]
-        valid_lines = [l for l in lines if not is_cloudflare(l)]
         
-        selected = valid_lines[:4]
+        # ФИЛЬТРУЕМ anycast-ip + сортируем Эстонию
+        filtered_lines = []
+        for line in lines:
+            bad_result = is_bad_sni_cidr(line)
+            if not is_cloudflare(line):
+                if bad_result == 'EE_LAST':  # Эстония отдельно
+                    sni_cidr_ee.append(line)
+                elif not bad_result:  # Нормальные SNI/CIDR
+                    filtered_lines.append(line)
+        
+        # Берём первые 4 нормальных
+        selected = filtered_lines[:4]
         sni_cidr_configs.extend(selected)
-        print(f"     ✅ +{len(selected)} SNI/CIDR ключей")
+        print(f"     ✅ +{len(selected)} нормальных (Эстония отдельно)")
     except:
         print(f"     ❌")
 
-print(f"\n📊 SNI/CIDR всего: {len(sni_cidr_configs)} ключей ✓")
+print(f"\n📊 SNI/CIDR: {len(sni_cidr_configs)} норм + {len(sni_cidr_ee)} 🇪🇪")
 
-# ===== 3. ДОБИРАЕМ РАЗНЫЕ СТРАНЫ (макс 2 на страну) =====
-print("\n📥 ДОБОР РАЗНЫХ СТРАН (1-2 сервера/страна):")
+# ===== 3. ДОБОР РАЗНЫХ СТРАН =====
+print("\n📥 ДОБОР РАЗНЫХ СТРАН:")
 other_countries = defaultdict(list)
 
 for source in PRIORITY_SOURCES:
@@ -123,28 +148,36 @@ for source in PRIORITY_SOURCES:
 country_order = ['DE', 'NL', 'FR', 'RU']
 final_configs = []
 
-print("\n🎯 СОБИРАЕМ ИДЕАЛЬНЫЙ СПИСОК:")
+print("\n🎯 СОБИРАЕМ:")
 for country in country_order:
     block = priority_blocks[country]
     if block:
         final_configs.extend(block)
-        print(f"✅ БЛОК {country}: {len(block)} серверов")
+        print(f"✅ БЛОК {country}: {len(block)}")
 
 other_order = sorted(other_countries.keys())
 for country in other_order:
     block = other_countries[country][:2]
     if block:
         final_configs.extend(block)
-        print(f"✅ {country}: {len(block)} серверов")
+        print(f"✅ {country}: {len(block)}")
 
-final_configs = final_configs[:23]
+# ДО 20 обычных (оставляем место для SNI/CIDR)
+final_configs = final_configs[:20]
+
+# SNI/CIDR БЛОК
 final_configs.extend(sni_cidr_configs[:12])
+
+# Эстония СТРОГО ПОСЛЕ SNI/CIDR но ПЕРЕД обрезкой
+final_configs.extend(sni_cidr_ee[:2])
+
+# ИТОГО 35
 final_configs = final_configs[:35]
 
 content = HEADER + '\n' + '\n'.join(final_configs)
 
 print(f"\n🎯 ИТОГО: {len(final_configs)} серверов")
-print(f"📋 23 обычных + {len(sni_cidr_configs[:12])} SNI/CIDR")
+print(f"📋 20 обычных + {len(sni_cidr_configs[:12])} SNI/CIDR + {len(sni_cidr_ee[:2])} 🇪🇪")
 
 # ===== ЗАГРУЗКА =====
 try:
@@ -154,10 +187,9 @@ try:
         Body=content,
         ContentType='text/plain; charset=utf-8'
     )
-    print("\n✅ ✅ ✅ ЗАГРУЖЕНО В ЯНДЕКС CLOUD!")
+    print("\n✅ ✅ ✅ ЗАГРУЖЕНО!")
     print("🔗 Happ: https://storage.yandexcloud.net/tariff15/отобранные.txt")
-    print("🎉 НАЗВАНИЕ В HAPP: SPECTER VPN!")
 except Exception as e:
     print(f"❌ {e}")
 
-print("\n🎉 SPECTER VPN — ИДЕАЛЬНЫЙ СПИСОК готов!")
+print("\n🎉 ❌NO anycast-ip + 🇪🇪В КОНЕЦ — готов!")
