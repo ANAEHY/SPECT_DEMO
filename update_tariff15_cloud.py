@@ -9,10 +9,6 @@ from collections import defaultdict
 ACCESS_KEY = os.getenv('YANDEX_ACCESS_KEY')
 SECRET_KEY = os.getenv('YANDEX_SECRET_KEY')
 
-if not ACCESS_KEY or not SECRET_KEY:
-    print("❌ Ошибка: Добавь YANDEX_ACCESS_KEY и YANDEX_SECRET_KEY в GitHub Secrets!")
-    exit(1)
-
 s3_client = boto3.client(
     's3',
     endpoint_url='https://storage.yandexcloud.net',
@@ -21,7 +17,7 @@ s3_client = boto3.client(
     region_name='ru-central1'
 )
 
-# ===== ИСТОЧНИКИ VPN КЛЮЧЕЙ =====
+# ===== ТВОИ 7 ИСТОЧНИКОВ =====
 SOURCES = [
     'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_SS+All_RUS.txt',
     'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt',
@@ -32,26 +28,25 @@ SOURCES = [
     'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt'
 ]
 
-HEADER = """#profile-title: SPECTER VPN CLOUD
-#profile-update-interval: 6
-# Автообновление каждые 6 часов! Работает под РКИ
-"""
+# ===== ТВОИ ТОЧНЫЕ 2 СТРОЧКИ =====
+HEADER = """#profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
+#profile-update-interval: 12"""
 
 def is_cloudflare(config):
-    """Исключаем Cloudflare IP"""
-    cf_patterns = ['cloudflare', 'cf-ip', '1.1.1.1', '1.0.0.1', '104.', '172.67.', '141.193.']
+    """Исключаем Cloudflare"""
+    cf_patterns = ['cloudflare', 'cf-ip', '1.1.1.1', '104.', '172.67.', '141.193.']
     return any(pattern in config.lower() for pattern in cf_patterns)
 
 def extract_country(config):
-    """Определяем страну по ключу"""
+    """СТРОГОЕ определение страны"""
     patterns = {
-        'DE': ['de-', 'germany', 'de:', 'berlin', 'frankfurt', 'de/'],
-        'FR': ['fr-', 'france', 'fr:', 'paris', 'fr/'],
-        'NL': ['nl-', 'netherlands', 'nl:', 'amsterdam', 'rotterdam', 'nl/'],
-        'RU': ['ru-', 'russia', 'ru:', 'moscow', 'spb', 'ru/'],
-        'US': ['us-', 'usa', 'us:', 'newyork'],
-        'SG': ['sg-', 'singapore', 'sg:'],
-        'GB': ['gb-', 'uk', 'gb:', 'london']
+        'DE': ['de-', 'germany', 'de:', 'berlin', 'frankfurt', 'de/', '🇩🇪'],
+        'FR': ['fr-', 'france', 'fr:', 'paris', 'fr/', '🇫🇷'],
+        'NL': ['nl-', 'netherlands', 'nl:', 'amsterdam', 'rotterdam', 'nl/', '🇳🇱'],
+        'RU': ['ru-', 'russia', 'ru:', 'moscow', 'spb', 'ru/', '🇷🇺'],
+        'US': ['us-', 'usa', 'us:', 'newyork', '🇺🇸'],
+        'SG': ['sg-', 'singapore', 'sg:', '🇸🇬'],
+        'GB': ['gb-', 'uk', 'gb:', 'london', '🇬🇧']
     }
     config_lower = config.lower()
     for country, pats in patterns.items():
@@ -59,62 +54,58 @@ def extract_country(config):
             return country
     return 'OTHER'
 
-print("🚀 SPECTER VPN CLOUD — 35 ключей (DE+FR+NL+RU)")
+print("🚀 SPECTER VPN — БЛОКИ ПО СТРАНАМ (SNI/CIDR В КОНЦЕ)")
 
-# ===== СОБИРАЕМ КЛЮЧИ =====
-all_configs = []
-country_stats = defaultdict(list)
-
+# ===== СОБИРАЕМ КЛЮЧИ ПО ИСТОЧНИКАМ =====
+all_configs_by_source = []
 for i, source in enumerate(SOURCES):
-    print(f"📥 {i+1}/7 {source.split('/')[-1]}")
+    print(f"\n📥 {i+1}/7 {source.split('/')[-1]}")
     try:
         resp = requests.get(source, timeout=10)
-        if resp.status_code == 200:
-            # Пропускаем первые 3 строки (инфо)
-            lines = [line.strip() for line in resp.text.splitlines()[3:] if line.strip()]
-            
-            # Фильтр Cloudflare
-            valid_lines = [line for line in lines if not is_cloudflare(line)]
-            print(f"   → {len(lines)} всего → {len(valid_lines)} без CF")
-            
-            # Берём РАНДОМНО 5 из каждого
-            if len(valid_lines) >= 5:
-                selected = random.sample(valid_lines, 5)
-            else:
-                selected = valid_lines[:5]
-            
-            # Статистика по странам
-            for config in selected:
-                country = extract_country(config)
-                country_stats[country].append(config)
-            
-            all_configs.extend(selected)
-            print(f"   ✅ +{len(selected)} ключей")
+        lines = [line.strip() for line in resp.text.splitlines()[3:] if line.strip()]
+        valid_lines = [line for line in lines if not is_cloudflare(line)]
+        
+        # СТРОГО 5 ИЗ КАЖДОГО
+        selected = random.sample(valid_lines, min(5, len(valid_lines)))
+        all_configs_by_source.append(selected)
+        print(f"   ✅ {len(selected)} ключей")
+    except:
+        print(f"   ❌ Ошибка")
+
+# ===== ГРУППИРУЕМ ПО СТРАНАМ (БЛОКИ) =====
+country_blocks = defaultdict(list)
+sni_cidr_keys = []
+
+for source_configs in all_configs_by_source:
+    for config in source_configs:
+        country = extract_country(config)
+        source_name = next((s.split('/')[-1] for s in SOURCES), '')
+        
+        # SNI/CIDR ОТДЕЛЬНО В КОНЕЦ
+        if 'SNI' in source_name or 'CIDR' in source_name:
+            sni_cidr_keys.append(config)
         else:
-            print(f"   ❌ HTTP {resp.status_code}")
-    except Exception as e:
-        print(f"   ❌ {e}")
+            country_blocks[country].append(config)
 
-print(f"\n📊 Страны: {dict((k, len(v)) for k, v in country_stats.items())}")
-print(f"🎯 Всего собрано: {len(all_configs)} ключей")
+print(f"\n📊 Блоки стран: {dict((k, len(v)) for k, v in country_blocks.items())}")
+print(f"📋 SNI/CIDR: {len(sni_cidr_keys)} ключей")
 
-# ===== ФОРМИРУЕМ ФИНАЛЬНЫЙ СПИСОК =====
-final_configs = all_configs[:35]  # Топ 35 лучших
+# ===== СТРОГИЙ ПОРЯДОК: DE→FR→NL→RU→остальные =====
+country_order = ['DE', 'FR', 'NL', 'RU', 'US', 'SG', 'GB', 'OTHER']
+final_configs = []
 
-# SNI и CIDR в конец
-sni_cidr = []
-main_configs = []
-for config in final_configs:
-    source_name = next((s.split('/')[-1] for s in SOURCES if s in config), '')
-    if 'SNI' in source_name or 'CIDR' in source_name:
-        sni_cidr.append(config)
-    else:
-        main_configs.append(config)
+for country in country_order:
+    if country in country_blocks:
+        # БЛOK СТРАНЫ — все ключи подряд
+        final_configs.extend(country_blocks[country])
+        print(f"✅ Блок {country}: {len(country_blocks[country])} ключей")
 
-final_configs = main_configs + sni_cidr
-
+# ДО 35 КЛЮЧЕЙ + SNI/CIDR В КОНЕЦ
+final_configs = final_configs[:33] + sni_cidr_keys[:2]
 content = HEADER + '\n' + '\n'.join(final_configs)
-print(f"\n✅ Готово {len(final_configs)} ключей для Happ!")
+
+print(f"\n🎯 ИТОГО: {len(final_configs)} ключей")
+print("📝 Порядок: DE→FR→NL→RU→US→SNI/CIDR")
 
 # ===== ЗАГРУЖАЕМ В ЯНДЕКС CLOUD =====
 try:
@@ -124,13 +115,10 @@ try:
         Body=content,
         ContentType='text/plain; charset=utf-8'
     )
-    print("✅ ✅ ✅ ЗАГРУЖЕНО В ЯНДЕКС CLOUD!")
-    print("\n🔗 🎉 ПОСТОЯННАЯ ССЫЛКА ДЛЯ КЛИЕНТОВ:")
+    print("\n✅ ✅ ✅ ЗАГРУЖЕНО!")
+    print("🔗 Ссылка для Happ:")
     print("https://storage.yandexcloud.net/tariff15/отобранные.txt")
-    print("\n📱 Happ → Добавить подписку → вставь эту ссылку!")
-    
 except Exception as e:
-    print(f"❌ Ошибка загрузки: {e}")
-    print("🔧 Проверь: 1) storage.admin роль 2) публичный доступ к бакету")
+    print(f"❌ Загрузка: {e}")
 
-print("\n🎉 SPECTER VPN CLOUD готов к работе!")
+print("\n🎉 SPECTER VPN — БЛОКИ ПО СТРАНАМ готов!")
