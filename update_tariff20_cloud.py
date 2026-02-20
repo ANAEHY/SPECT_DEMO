@@ -69,6 +69,11 @@ def extract_country(config):
         'IE': ['ie-', 'ireland', 'ie:', 'dublin', '🇮🇪'],
         'PL': ['pl-', 'poland', 'pl:', 'warsaw', '🇵🇱'],
         'CZ': ['cz-', 'czech', 'cz:', 'prague', '🇨🇿']
+        'IT': ['it-', 'italy', 'it:', 'rome', 'milan', '🇮🇹'],      # Италия
+        'ES': ['es-', 'spain', 'es:', 'madrid', '🇪🇸'],            # Испания  
+        'AU': ['au-', 'australia', 'au:', 'sydney', '🇦🇺'],        # Австралия
+        'JP': ['jp-', 'japan', 'jp:', 'tokyo', '🇯🇵']              # Япония
+
     }
     config_lower = config.lower()
     for country, pats in patterns.items():
