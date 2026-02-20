@@ -149,7 +149,7 @@ final_configs = final_configs[:35]  # Ровно 35
 content = HEADER + '\n' + '\n'.join(final_configs)
 
 print(f"\n🎯 ИТОГО: {len(final_configs)} серверов")
-print(f"📋 23 обычных + {len([c for c in final_configs if len(final_configs)-len(sni_cidr_configs):])} SNI/CIDR")
+print(f"📋 23 обычных + {len(sni_cidr_configs[:12])} SNI/CIDR")
 
 # ===== ЗАГРУЗКА =====
 try:
