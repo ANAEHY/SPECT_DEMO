@@ -4,7 +4,7 @@ concurrency:
   cancel-in-progress: true
 on:
   schedule:
-    - cron: '*/5 * * * *'  # ← КАЖДЫЕ 5 МИНУТ!
+    - cron: '0 */11 * * *'  # ← КАЖДЫЕ 5 МИНУТ!
   workflow_dispatch:     # ← Ручной запуск тоже работает
 
 jobs:
