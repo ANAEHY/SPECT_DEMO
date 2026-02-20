@@ -25,11 +25,11 @@ PRIORITY_SOURCES = [
     'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt'
 ]
 
-# ===== SNI/CIDR ВСЕГДА В КОНЕЦ =====
+# ===== SNI/CIDR ИСТОЧНИКИ (12 ШТУК В КОНЕЦ!) =====
 SNI_CIDR_SOURCES = [
-    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt',
-    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt',
-    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt'
+    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt',  # SNI
+    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt',              # CIDR 1  
+    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt'                    # SNI
 ]
 
 HEADER = """#profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
@@ -41,13 +41,13 @@ def is_cloudflare(config):
     return any(pattern in config.lower() for pattern in cf_patterns)
 
 def extract_country(config):
-    """УЛУЧШЕННАЯ сортировка стран"""
+    """Расширенная сортировка стран"""
     patterns = {
         'DE': ['de-', 'germany', 'de:', 'berlin', 'frankfurt', 'de/', '🇩🇪', 'germani'],
         'NL': ['nl-', 'netherlands', 'nl:', 'amsterdam', 'rotterdam', 'nl/', '🇳🇱', 'niderland'],
         'FR': ['fr-', 'france', 'fr:', 'paris', 'fr/', '🇫🇷', 'french'],
         'RU': ['ru-', 'russia', 'ru:', 'moscow', 'spb', 'ru/', '🇷🇺', 'russian'],
-        'FI': ['fi-', 'finland', 'fi:', 'helsinki', '🇫🇮'],  # Финляндия
+        'FI': ['fi-', 'finland', 'fi:', 'helsinki', '🇫🇮'],
         'US': ['us-', 'usa', 'us:', 'newyork', '🇺🇸'],
         'SG': ['sg-', 'singapore', 'sg:', '🇸🇬'],
         'GB': ['gb-', 'uk', 'gb:', 'london', '🇬🇧']
@@ -58,12 +58,12 @@ def extract_country(config):
             return country
     return 'OTHER'
 
-print("🚀 SPECTER VPN — ИДЕАЛЬНЫЕ БЛОКИ (1 страна = 1-3 сервера макс!)")
+print("🚀 SPECTER VPN — 23 обычных + 12 SNI/CIDR в конце!")
 
-# ===== 1. ПРИОРИТЕТНЫЕ БЛОКИ (DE/NL/FR/RU по 1 с каждого источника) =====
+# ===== 1. ПРИОРИТЕТНЫЕ БЛОКИ DE/NL/FR/RU (макс 3 на страну) =====
 priority_blocks = {'DE': [], 'NL': [], 'FR': [], 'RU': []}
 
-print("\n📥 ПРИОРИТЕТНЫЕ ИСТОЧНИКИ:")
+print("\n📥 ПРИОРИТЕТНЫЕ ИСТОЧНИКИ (DE/NL/FR/RU):")
 for i, source in enumerate(PRIORITY_SOURCES):
     print(f"  {i+1}. {source.split('/')[-1]}")
     try:
@@ -71,32 +71,40 @@ for i, source in enumerate(PRIORITY_SOURCES):
         lines = [l.strip() for l in resp.text.splitlines()[3:] if l.strip()]
         valid_lines = [l for l in lines if not is_cloudflare(l)]
         
-        # БЕРЁМ ПО 1 КЛЮЧУ каждой приоритетной страны
         for country in ['DE', 'NL', 'FR', 'RU']:
-            country_lines = [l for l in valid_lines if extract_country(l) == country]
-            if country_lines and len(priority_blocks[country]) < 3:  # МАКСИМУМ 3 на страну!
-                key = random.choice(country_lines)
-                priority_blocks[country].append(key)
-                print(f"     ✅ {country}: +1")
+            if len(priority_blocks[country]) < 3:  # МАКС 3!
+                country_lines = [l for l in valid_lines if extract_country(l) == country]
+                if country_lines:
+                    key = random.choice(country_lines)
+                    if key not in priority_blocks[country]:  # Без повторов
+                        priority_blocks[country].append(key)
+                        print(f"     ✅ {country}: +1 (всего {len(priority_blocks[country])})")
     except:
         print(f"     ❌")
 
-# ===== 2. SNI/CIDR (ВСЕГДА В КОНЕЦ) =====
+# ===== 2. МАКСИМУМ SNI/CIDR (ПО 4 С КАЖДОГО = 12 ШТУК!) =====
 sni_cidr_configs = []
-print("\n📥 SNI/CIDR (КОНЕЦ СПИСКА):")
-for source in SNI_CIDR_SOURCES:
+print("\n📥 SNI/CIDR (ПО 4 С КАЖДОГО = 12 ШТУК):")
+for i, source in enumerate(SNI_CIDR_SOURCES):
+    source_name = source.split('/')[-1]
+    print(f"  {i+1}. {source_name}")
     try:
         resp = requests.get(source, timeout=10)
         lines = [l.strip() for l in resp.text.splitlines()[3:] if l.strip()]
         valid_lines = [l for l in lines if not is_cloudflare(l)]
-        sni_cidr_configs.extend(valid_lines[:2])
+        
+        # ПО 4 С КАЖДОГО ИСТОЧНИКА!
+        selected = valid_lines[:4]
+        sni_cidr_configs.extend(selected)
+        print(f"     ✅ +{len(selected)} SNI/CIDR ключей")
     except:
-        pass
+        print(f"     ❌")
 
-# ===== 3. ДОБИРАЕМ РАЗНЫЕ СТРАНЫ (1-2 сервера МАКСИМУМ с каждой!) =====
+print(f"\n📊 SNI/CIDR всего: {len(sni_cidr_configs)} ключей ✓")
+
+# ===== 3. ДОБИРАЕМ РАЗНЫЕ СТРАНЫ (макс 2 на страну) =====
 print("\n📥 ДОБОР РАЗНЫХ СТРАН (1-2 сервера/страна):")
 other_countries = defaultdict(list)
-used_countries = set(priority_blocks.keys())
 
 for source in PRIORITY_SOURCES:
     try:
@@ -106,39 +114,42 @@ for source in PRIORITY_SOURCES:
         
         for line in valid_lines:
             country = extract_country(line)
-            if country not in used_countries and len(other_countries[country]) < 2:
+            if country not in ['DE', 'NL', 'FR', 'RU'] and len(other_countries[country]) < 2:
                 other_countries[country].append(line)
     except:
         pass
 
-# СТРОГАЯ СОРТИРОВКА: сначала основные → потом по алфавиту остальные
+# ===== 4. ФИНАЛЬНАЯ СОБИРКА =====
 country_order = ['DE', 'NL', 'FR', 'RU']
 final_configs = []
 
 print("\n🎯 СОБИРАЕМ ИДЕАЛЬНЫЙ СПИСОК:")
-# 1. ПРИОРИТЕТНЫЕ БЛОКИ
+# Приоритетные блоки
 for country in country_order:
     block = priority_blocks[country]
     if block:
         final_configs.extend(block)
         print(f"✅ БЛОК {country}: {len(block)} серверов")
 
-# 2. ДОПОЛНИТЕЛЬНЫЕ СТРАНЫ (по 1-2 сервера)
+# Дополнительные страны (по алфавиту, макс 2)
 other_order = sorted(other_countries.keys())
 for country in other_order:
-    block = other_countries[country][:2]  # МАКСИМУМ 2!
+    block = other_countries[country][:2]
     if block:
         final_configs.extend(block)
         print(f"✅ {country}: {len(block)} серверов")
 
-# 3. SNI/CIDR СТРОГО В КОНЕЦ
-final_configs.extend(sni_cidr_configs[:3])
-final_configs = final_configs[:35]  # Ровно 35 ключей
+# ДО 23 обычных серверов (оставляем место для 12 SNI/CIDR)
+final_configs = final_configs[:23]
+
+# SNI/CIDR СТРОГО В КОНЕЦ (12 штук!)
+final_configs.extend(sni_cidr_configs[:12])
+final_configs = final_configs[:35]  # Ровно 35
 
 content = HEADER + '\n' + '\n'.join(final_configs)
 
 print(f"\n🎯 ИТОГО: {len(final_configs)} серверов")
-print("📋 ПОРЯДОК: DE→NL→FR→RU→разные(1-2/страна)→SNI/CIDR")
+print(f"📋 23 обычных + {len([c for c in final_configs if len(final_configs)-len(sni_cidr_configs):])} SNI/CIDR")
 
 # ===== ЗАГРУЗКА =====
 try:
@@ -148,9 +159,9 @@ try:
         Body=content,
         ContentType='text/plain; charset=utf-8'
     )
-    print("\n✅ ✅ ✅ ЗАГРУЖЕНО!")
+    print("\n✅ ✅ ✅ ЗАГРУЖЕНО В ЯНДЕКС CLOUD!")
     print("🔗 Happ: https://storage.yandexcloud.net/tariff15/отобранные.txt")
 except Exception as e:
     print(f"❌ {e}")
 
-print("\n🎉 ИДЕАЛЬНЫЕ БЛОКИ — БЕЗ ПОВТОРОВ готов!")
+print("\n🎉 23+12 SNI/CIDR — ИДЕАЛЬНЫЙ СПИСОК готов!")
