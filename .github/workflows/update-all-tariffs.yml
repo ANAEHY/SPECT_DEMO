@@ -1,42 +1,54 @@
-name: SPECTER VPN All Tariffs Auto Update
+name: 🛡️ SPECTER VPN — Все Тарифы (10+15+20)
 
 on:
   schedule:
-    - cron: '0 */11 * * *'    # тариф15: 00:00, 11:00, 22:00
-  workflow_dispatch:
+    # 🕐 КАЖДЫЕ 11 ЧАСОВ (учитывая задержку GitHub)
+    - cron: '0 */11 * * *'
+  workflow_dispatch:  # ✅ Ручной запуск кнопкой
 
 jobs:
-  update-all:
+  update-all-tariffs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout code
+    - name: 📥 Checkout код
       uses: actions/checkout@v4
     
-    - name: Set up Python
+    - name: 🐍 Python 3.11
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
     
-    - name: Install dependencies
+    - name: 📦 Установка зависимостей
       run: |
         python -m pip install --upgrade pip
         pip install boto3 requests
     
-    - name: Update Tariff 15 (35 серверов + SNI)
+    - name: 🚀 Тариф 15 (35 серверов + SNI)
       env:
         YANDEX_ACCESS_KEY: ${{ secrets.YANDEX_ACCESS_KEY }}
         YANDEX_SECRET_KEY: ${{ secrets.YANDEX_SECRET_KEY }}
       run: python update_tariff15_cloud.py
     
-    - name: Update Tariff 10 (17 серверов)
+    - name: 🚀 Тариф 10 (17 серверов)
       env:
         YANDEX_ACCESS_KEY: ${{ secrets.YANDEX_ACCESS_KEY }}
         YANDEX_SECRET_KEY: ${{ secrets.YANDEX_SECRET_KEY }}
       run: python update_tariff10_cloud.py
     
-    - name: Success notification
+    - name: 🚀 Тариф 20 (60 серверов + max SNI/CIDR)
+      env:
+        YANDEX_ACCESS_KEY: ${{ secrets.YANDEX_ACCESS_KEY }}
+        YANDEX_SECRET_KEY: ${{ secrets.YANDEX_SECRET_KEY }}
+      run: python update_tariff20_cloud.py
+    
+    - name: ✅ Успешно обновлено!
       if: success()
       run: |
-        echo "✅ Tariff 15: https://storage.yandexcloud.net/tariff15/отобранные.txt"
-        echo "✅ Tariff 10: https://storage.yandexcloud.net/tariff10/отобранные.txt"
+        echo "🎉 ВСЕ ТАРИФЫ ОБНОВЛЕНЫ!"
+        echo ""
+        echo "🔗 Тариф 15 (35 серверов): https://storage.yandexcloud.net/tariff15/отобранные.txt"
+        echo "🔗 Тариф 10 (17 серверов): https://storage.yandexcloud.net/tariff10/отобранные.txt"  
+        echo "🔗 Тариф 20 (60 серверов): https://storage.yandexcloud.net/tariff20/отобранные.txt"
+        echo ""
+        echo "⏰ Следующее обновление: через 11 часов"
