@@ -1,0 +1,42 @@
+name: SPECTER VPN All Tariffs Auto Update
+
+on:
+  schedule:
+    - cron: '0 */11 * * *'    # тариф15: 00:00, 11:00, 22:00
+  workflow_dispatch:
+
+jobs:
+  update-all:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install boto3 requests
+    
+    - name: Update Tariff 15 (35 серверов + SNI)
+      env:
+        YANDEX_ACCESS_KEY: ${{ secrets.YANDEX_ACCESS_KEY }}
+        YANDEX_SECRET_KEY: ${{ secrets.YANDEX_SECRET_KEY }}
+      run: python update_tariff15_cloud.py
+    
+    - name: Update Tariff 10 (17 серверов)
+      env:
+        YANDEX_ACCESS_KEY: ${{ secrets.YANDEX_ACCESS_KEY }}
+        YANDEX_SECRET_KEY: ${{ secrets.YANDEX_SECRET_KEY }}
+      run: python update_tariff10_cloud.py
+    
+    - name: Success notification
+      if: success()
+      run: |
+        echo "✅ Tariff 15: https://storage.yandexcloud.net/tariff15/отобранные.txt"
+        echo "✅ Tariff 10: https://storage.yandexcloud.net/tariff10/отобранные.txt"
