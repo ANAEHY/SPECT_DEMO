@@ -27,11 +27,12 @@ PRIORITY_SOURCES = [
 
 # ===== SNI/CIDR ИСТОЧНИКИ (12 ШТУК В КОНЕЦ!) =====
 SNI_CIDR_SOURCES = [
-    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt',  # SNI
-    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt',              # CIDR 1  
-    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt'                    # SNI
+    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt',
+    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt',              
+    'https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt'                    
 ]
 
+# ===== SPECTER VPN НАЗВАНИЕ ДЛЯ HAPP =====
 HEADER = """#profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 12"""
 
@@ -72,11 +73,11 @@ for i, source in enumerate(PRIORITY_SOURCES):
         valid_lines = [l for l in lines if not is_cloudflare(l)]
         
         for country in ['DE', 'NL', 'FR', 'RU']:
-            if len(priority_blocks[country]) < 3:  # МАКС 3!
+            if len(priority_blocks[country]) < 3:
                 country_lines = [l for l in valid_lines if extract_country(l) == country]
                 if country_lines:
                     key = random.choice(country_lines)
-                    if key not in priority_blocks[country]:  # Без повторов
+                    if key not in priority_blocks[country]:
                         priority_blocks[country].append(key)
                         print(f"     ✅ {country}: +1 (всего {len(priority_blocks[country])})")
     except:
@@ -93,7 +94,6 @@ for i, source in enumerate(SNI_CIDR_SOURCES):
         lines = [l.strip() for l in resp.text.splitlines()[3:] if l.strip()]
         valid_lines = [l for l in lines if not is_cloudflare(l)]
         
-        # ПО 4 С КАЖДОГО ИСТОЧНИКА!
         selected = valid_lines[:4]
         sni_cidr_configs.extend(selected)
         print(f"     ✅ +{len(selected)} SNI/CIDR ключей")
@@ -124,14 +124,12 @@ country_order = ['DE', 'NL', 'FR', 'RU']
 final_configs = []
 
 print("\n🎯 СОБИРАЕМ ИДЕАЛЬНЫЙ СПИСОК:")
-# Приоритетные блоки
 for country in country_order:
     block = priority_blocks[country]
     if block:
         final_configs.extend(block)
         print(f"✅ БЛОК {country}: {len(block)} серверов")
 
-# Дополнительные страны (по алфавиту, макс 2)
 other_order = sorted(other_countries.keys())
 for country in other_order:
     block = other_countries[country][:2]
@@ -139,12 +137,9 @@ for country in other_order:
         final_configs.extend(block)
         print(f"✅ {country}: {len(block)} серверов")
 
-# ДО 23 обычных серверов (оставляем место для 12 SNI/CIDR)
 final_configs = final_configs[:23]
-
-# SNI/CIDR СТРОГО В КОНЕЦ (12 штук!)
 final_configs.extend(sni_cidr_configs[:12])
-final_configs = final_configs[:35]  # Ровно 35
+final_configs = final_configs[:35]
 
 content = HEADER + '\n' + '\n'.join(final_configs)
 
@@ -161,7 +156,8 @@ try:
     )
     print("\n✅ ✅ ✅ ЗАГРУЖЕНО В ЯНДЕКС CLOUD!")
     print("🔗 Happ: https://storage.yandexcloud.net/tariff15/отобранные.txt")
+    print("🎉 НАЗВАНИЕ В HAPP: SPECTER VPN!")
 except Exception as e:
     print(f"❌ {e}")
 
-print("\n🎉 23+12 SNI/CIDR — ИДЕАЛЬНЫЙ СПИСОК готов!")
+print("\n🎉 SPECTER VPN — ИДЕАЛЬНЫЙ СПИСОК готов!")
