@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <title>SPECTER VPN</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    :root {
+      --bg: #000000;
+      --text: #ffffff;
+      --text-muted: #cccccc;
+      --card: rgba(25, 25, 25, 0.95);
+      --border: rgba(255,255,255,0.15);
+      --glow: rgba(255,255,255,0.3);
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      touch-action: manipulation;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: env(safe-area-inset-top) 1rem env(safe-area-inset-bottom) 1rem;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 70%);
+      opacity: 0.25;
+      animation: fogMove 25s linear infinite;
+      pointer-events: none;
+      z-index: 1;
+    }
+    @keyframes fogMove {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-15%, 10%) scale(1.15); opacity: 0.4; }
+      100% { transform: translate(0, 0) scale(1); }
+    }
+
+    canvas#bg-canvas,
+    canvas#prismLetter {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .logo-container {
+      position: relative;
+      z-index: 10;
+      margin: 12rem 0 5rem; /* ОПУЩЕНО ОЧЕНЬ НИЗКО */
+    }
+
+    .logo {
+      font-size: clamp(4rem, 14vw, 7rem);
+      font-weight: 900;
+      letter-spacing: -0.08em;
+      text-shadow: 0 0 70px rgba(255,255,255,0.8);
+      background: linear-gradient(90deg, #fff, #ddd, #fff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+    }
+
+    .prism-letter {
+      position: fixed;
+      inset: 0;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 4vw, 1.3rem);
+      color: var(--text-muted);
+      margin-bottom: 3rem;
+      letter-spacing: 2px;
+      font-weight: 500;
+      z-index: 10;
+      max-width: 90vw;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 1.5rem 1rem;
+      z-index: 10;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .user-card {
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 24px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      z-index: 10;
+    }
+
+    .avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 3px solid var(--border);
+      box-shadow: 0 0 30px var(--glow);
+    }
+
+    .status {
+      padding: 0.6rem 1.2rem;
+      background: rgba(0, 255, 0, 0.2);
+      border: 1px solid rgba(0, 255, 0, 0.5);
+      border-radius: 20px;
+      color: #00ff88;
+      font-weight: 600;
+      font-size: 0.85rem;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    }
+    .status.error {
+      background: rgba(255, 0, 0, 0.2);
+      border-color: rgba(255, 0, 0, 0.5);
+      color: #ff5555;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      z-index: 10;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 1.2rem 1rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border: 2px solid var(--border);
+      border-radius: 40px;
+      background: transparent;
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      touch-action: manipulation;
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, #ffffff, #e0e0e0);
+      color: #000;
+      box-shadow: 0 0 25px rgba(255,255,255,0.4);
+    }
+
+    .btn:active {
+      transform: scale(0.96);
+    }
+
+    .footer {
+      margin-top: 2rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      z-index: 10;
+    }
+
+    .bottom-nav {
+      position: fixed;
+      bottom: env(safe-area-inset-bottom, 1rem);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--card);
+      padding: 0.8rem;
+      border-radius: 40px;
+      border: 2px solid var(--border);
+      display: flex;
+      gap: 0.8rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+      z-index: 100;
+      max-width: 95vw;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .bottom-nav::-webkit-scrollbar { display: none; }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0.5rem 0.8rem;
+      border-radius: 20px;
+      transition: all 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      min-width: 60px;
+    }
+    .nav-btn.active {
+      background: rgba(255,255,255,0.1);
+      color: var(--text);
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 5rem 1rem 6rem; }
+      .container { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="logo-container">
+    <div class="logo" id="logoText">SPECTER VPN</div>
+
+    <canvas class="prism-letter" id="prismLetter"></canvas>
+  </div>
+
+  <div class="subtitle">Сверхбыстрый • Без логов • Белые списки</div>
+
+  <div class="container">
+    <div id="pages">
+      <div id="page-success" class="page" style="display:none;">
+        <div class="success-wrapper">
+          <div style="font-size: 4rem; color: #00ff88; margin-bottom: 1rem;">✔</div>
+          <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Тариф активирован</h2>
+          <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 16px; margin-bottom: 1.5rem; border: 1px solid var(--border);">
+            <div id="success-plan" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Тариф: —</div>
+            <div id="success-price" style="font-size: 1.3rem; font-weight: 700; color: #00ff88; margin-bottom: 0.5rem;">—</div>
+            <div id="success-date" style="color: var(--text-muted);">Дата: —</div>
+          </div>
+          <button id="copyVlessSuccess" class="btn btn-primary" style="margin-bottom: 1rem;">СКОПИРОВАТЬ ВСЕ КЛЮЧИ</button>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Вставьте в v2rayNG, Hiddify или Nekobox</p>
+          <button class="btn" onclick="showPage('page-main')">На главную</button>
+        </div>
+      </div>
+
+      <div id="page-main" class="page active">
+        <div class="user-card">
+          <div class="avatar" style="background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);"></div>
+          <div>
+            <div id="name-main" class="name" style="font-size: 1.2rem; margin-bottom: 0.5rem;">Загрузка...</div>
+            <div id="status-main" class="status error">Загрузка...</div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="buyBtn" class="btn btn-primary">КУПИТЬ</button>
+          <button id="settingsBtn" class="btn">НАСТРОЙКА</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-page="page-main"><span>🏠</span>Главная</button>
+    <button class="nav-btn" data-page="buy"><span>🛒</span>Купить</button>
+    <button class="nav-btn" data-page="page-info"><span>ℹ️</span>Инфо</button>
+    <button class="nav-btn" data-page="page-settings"><span>⚙️</span>Настройки</button>
+    <button class="nav-btn" data-page="page-profile"><span>👤</span>Профиль</button>
+  </nav>
+
+  <div class="footer">
+    Made by <span style="color: #00ff88;">BERSERK</span> © 2026
+  </div>
+
+  <script>
+    // Telegram Mini App
+    if (window.Telegram?.WebApp) {
+      const tg = Telegram.WebApp;
+      tg.ready();
+      tg.expand();
+      tg.enableClosingConfirmation();
+      tg.MainButton.setText("Закрыть");
+      tg.MainButton.show();
+      tg.MainButton.onClick(() => tg.close());
+      console.log('Telegram Mini App запущен');
+    }
+
+    // Фон + частицы
+    const bgCanvas = document.getElementById('bg-canvas');
+    const bgCtx = bgCanvas.getContext('2d');
+    function resizeBg() {
+      bgCanvas.width = window.innerWidth;
+      bgCanvas.height = window.innerHeight;
+    }
+    resizeBg();
+    window.addEventListener('resize', resizeBg);
+
+    const particles = [];
+    for (let i = 0; i < 60; i++) {
+      particles.push({
+        x: Math.random() * bgCanvas.width,
+        y: Math.random() * bgCanvas.height,
+        radius: Math.random() * 1.5 + 0.3,
+        speedX: (Math.random() - 0.5) * 0.2,
+        speedY: (Math.random() - 0.5) * 0.2,
+        alpha: Math.random() * 0.3 + 0.1
+      });
+    }
+
+    function animateBg() {
+      bgCtx.fillStyle = 'rgba(0,0,0,0.08)';
+      bgCtx.fillRect(0, 0, bgCanvas.width, bgCanvas.height);
+      particles.forEach(p => {
+        p.x += p.speedX;
+        p.y += p.speedY;
+        if (p.x < 0 || p.x > bgCanvas.width) p.speedX *= -1;
+        if (p.y < 0 || p.y > bgCanvas.height) p.speedY *= -1;
+        bgCtx.beginPath();
+        bgCtx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        bgCtx.fillStyle = `rgba(255,255,255,${p.alpha})`;
+        bgCtx.fill();
+      });
+      requestAnimationFrame(animateBg);
+    }
+    animateBg();
+
+    // ПРИЗМА
+    const letterCanvas = document.getElementById('prismLetter');
+    const letterCtx = letterCanvas.getContext('2d');
+
+    function resizeLetter() {
+      letterCanvas.width = window.innerWidth;
+      letterCanvas.height = window.innerHeight;
+    }
+    resizeLetter();
+    window.addEventListener('resize', resizeLetter);
+
+    let time = 0;
+
+    function wavelengthToColor(wl) {
+      let r, g, b, alpha = 1;
+      if (wl >= 380 && wl < 440) { r = -1 * (wl - 440) / (440 - 380); g = 0; b = 1; }
+      else if (wl >= 440 && wl < 490) { r = 0; g = (wl - 440) / (490 - 440); b = 1; }
+      else if (wl >= 490 && wl < 510) { r = 0; g = 1; b = -1 * (wl - 510) / (510 - 490); }
+      else if (wl >= 510 && wl < 580) { r = (wl - 510) / (580 - 510); g = 1; b = 0; }
+      else if (wl >= 580 && wl < 645) { r = 1; g = -1 * (wl - 645) / (645 - 580); b = 0; }
+      else if (wl >= 645 && wl <= 780) { r = 1; g = 0; b = 0; }
+      else { r = g = b = 0; alpha = 0; }
+      if (wl > 700) alpha = (780 - wl) / (780 - 700);
+      else if (wl < 420) alpha = (wl - 380) / (420 - 380);
+      return `rgba(${Math.round(r*255)},${Math.round(g*255)},${Math.round(b*255)},${alpha})`;
+    }
+
+    function drawGlassLetterC(x, y, size, pulse) {
+      letterCtx.save();
+      letterCtx.translate(x, y);
+      letterCtx.scale(size, size);
+      letterCtx.shadowBlur = 20 * pulse;
+      letterCtx.shadowColor = 'rgba(255,255,255,0.7)';
+      letterCtx.lineWidth = 3;
+      letterCtx.lineJoin = 'round';
+      letterCtx.lineCap = 'round';
+      letterCtx.strokeStyle = 'rgba(255,255,255,0.8)';
+      letterCtx.beginPath();
+      letterCtx.arc(0.5, 0.4, 0.35, 0.25 * Math.PI, 0.75 * Math.PI);
+      letterCtx.arc(0.5, 0.6, 0.35, 1.25 * Math.PI, 1.75 * Math.PI);
+      letterCtx.moveTo(0.15, 0.25);
+      letterCtx.lineTo(0.15, 0.75);
+      letterCtx.moveTo(0.85, 0.25);
+      letterCtx.lineTo(0.85, 0.75);
+      letterCtx.stroke();
+      letterCtx.restore();
+    }
+
+    function animateLetterPrism() {
+      letterCtx.clearRect(0, 0, letterCanvas.width, letterCanvas.height);
+      time += 16;
+
+      const logo = document.getElementById('logoText');
+      if (!logo) return requestAnimationFrame(animateLetterPrism);
+
+      const rect = logo.getBoundingClientRect();
+      // Точка преломления на букве C (или T — подвинуто на 0.38)
+      const letterX = rect.left + rect.width * 0.38;
+      const letterY = rect.top + rect.height * 0.55;
+
+      const pulse = (Math.sin(time * 0.001) + 1) / 2;
+      const progress = (Math.sin(time * 0.0007) + 1) / 2;
+
+      // Линия начинается ОЧЕНЬ высоко
+      const startX = letterCanvas.width * 0.15;
+      const startY = letterCanvas.height * 0.02; // ← 2% от верха — выше некуда почти
+      const endX = letterX;
+      const endY = letterY;
+
+      if (progress < 0.4) {
+        const p = progress / 0.4;
+        const curX = startX + (endX - startX) * p;
+        const curY = startY + (endY - startY) * p;
+
+        const grad = letterCtx.createLinearGradient(startX, startY, curX, curY);
+        grad.addColorStop(0, 'rgba(255,255,255,0.1)');
+        grad.addColorStop(0.5, 'rgba(255,255,255,0.9)');
+        grad.addColorStop(1, 'rgba(255,255,255,0.7)');
+
+        letterCtx.lineWidth = 4 + p * 4;
+        letterCtx.lineCap = 'round';
+        letterCtx.shadowBlur = 20 + p * 20;
+        letterCtx.shadowColor = '#ffffff';
+        letterCtx.strokeStyle = grad;
+        letterCtx.beginPath();
+        letterCtx.moveTo(startX, startY);
+        letterCtx.lineTo(curX, curY);
+        letterCtx.stroke();
+      } else {
+        letterCtx.lineWidth = 6;
+        letterCtx.lineCap = 'round';
+        letterCtx.shadowBlur = 28;
+        letterCtx.shadowColor = '#ffffff';
+        letterCtx.strokeStyle = 'rgba(255,255,255,0.65)';
+        letterCtx.beginPath();
+        letterCtx.moveTo(startX, startY);
+        letterCtx.lineTo(endX, endY);
+        letterCtx.stroke();
+
+        drawGlassLetterC(letterX, letterY, 0.11 * pulse + 0.08, progress);
+
+        const rayCount = 7;
+        for (let i = 0; i < rayCount; i++) {
+          const t = i / (rayCount - 1);
+          const wl = 380 + 400 * t;
+          const rayAlpha = 0.85 - t * 0.5;
+          const rayOffset = i * 7;
+
+          letterCtx.save();
+          letterCtx.globalAlpha = rayAlpha * pulse;
+          letterCtx.shadowBlur = 16 + t * 12;
+          letterCtx.strokeStyle = wavelengthToColor(wl);
+          letterCtx.lineWidth = 2.5 - t * 0.4;
+          letterCtx.lineCap = 'round';
+          letterCtx.shadowColor = wavelengthToColor(wl);
+
+          letterCtx.beginPath();
+          letterCtx.moveTo(letterX + 22, letterY - 12 + rayOffset);
+          letterCtx.lineTo(letterX + 110, letterY + 30 + rayOffset * 1.1);
+          letterCtx.stroke();
+
+          letterCtx.lineWidth = 1.6;
+          letterCtx.beginPath();
+          letterCtx.moveTo(letterX + 75, letterY + 8 + rayOffset);
+          letterCtx.lineTo(letterX + 145, letterY + 50 + rayOffset * 1.3);
+          letterCtx.stroke();
+          letterCtx.restore();
+        }
+
+        const sparkCount = 10;
+        for (let i = 0; i < sparkCount; i++) {
+          const angle = (time * 0.0025 + i * 0.5) % (Math.PI * 2);
+          const dist = 55 + Math.sin(time * 0.007 + i) * 20;
+          const sparkX = letterX + Math.cos(angle) * dist;
+          const sparkY = letterY + Math.sin(angle) * dist * 0.55;
+
+          letterCtx.save();
+          letterCtx.globalAlpha = 0.85 * Math.sin(time * 0.012 + i * 0.3) * pulse;
+          letterCtx.shadowBlur = 14;
+          letterCtx.shadowColor = wavelengthToColor(450 + i * 45);
+
+          letterCtx.beginPath();
+          letterCtx.arc(sparkX, sparkY, 1.8 + Math.sin(time * 0.018 + i) * 1, 0, Math.PI * 2);
+          letterCtx.fillStyle = wavelengthToColor(450 + i * 45);
+          letterCtx.fill();
+          letterCtx.restore();
+        }
+      }
+
+      requestAnimationFrame(animateLetterPrism);
+    }
+    animateLetterPrism();
+
+    console.log('Готово — SPECTER VPN одним словом, опущено пиздец как низко');
+  </script>
+</body>
+</html>
