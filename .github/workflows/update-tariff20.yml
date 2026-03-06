@@ -2,36 +2,34 @@ name: SPECTER VPN Tariff 20 Auto Update
 
 on:
   schedule:
-    # 🕐 КАЖДЫЕ 11 ЧАСОВ
     - cron: '0 */11 * * *'
-  workflow_dispatch:  # ✅ Ручной запуск
+  workflow_dispatch:
 
 jobs:
   update-tariff20:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
-    
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install boto3 requests
-    
-    - name: Update Tariff 20 (60 серверов)
-      env:
-        YANDEX_ACCESS_KEY: ${{ secrets.YANDEX_ACCESS_KEY }}
-        YANDEX_SECRET_KEY: ${{ secrets.YANDEX_SECRET_KEY }}
-      run: python update_tariff20_cloud.py
-    
-    - name: Success notification
-      if: success()
-      run: |
-        echo "✅ Tariff 20 updated! (4/4/4/3 + 16 стран + SNI/CIDR)"
-        echo "🔗 https://storage.yandexcloud.net/tariff20/отобранные.txt"
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Update Tariff 20
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python update_tariff20_cloud.py
+
+      - name: Success notification
+        if: success()
+        run: |
+          echo "keys.txt updated!"
+          echo "https://raw.githubusercontent.com/spermoeshka/NEW_SRECTER/main/keys.txt"
