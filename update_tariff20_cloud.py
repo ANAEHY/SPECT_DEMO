@@ -8,7 +8,7 @@ from urllib.parse import urlparse, urlunparse, quote, unquote
 
 # ===== GITHUB НАСТРОЙКИ =====
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')   # секрет в GitHub Actions
-GITHUB_REPO  = 'spermoeshka/NEW_SRECTER'   # твой репозиторий
+GITHUB_REPO = 'spermoeshka/SPECT_DEMO'   # твой репозиторий
 GITHUB_FILE  = 'keys.txt'                  # имя файла (латиницей!)
 GITHUB_BRANCH = 'main'
 
