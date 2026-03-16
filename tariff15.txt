@@ -1,17 +1,17 @@
 #profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 1
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.15:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.220:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.59:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@59.3.3.161:8443?encryption=none&security=tls&sni=ylnhh.cc.cd&type=ws&host=ylnhh.cc.cd&path=%2Ftelegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@43.162.120.155:443?path=Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2&security=tls&encryption=none&host=zgtwylnhh.cc.cd&fp=chrome&type=ws&sni=zgtwylnhh.cc.cd#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@94.183.185.96:443?security=tls&sni=zgtwylnhh.cc.cd&type=ws&host=zgtwylnhh.cc.cd&path=Telegram@WangCai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@94.183.185.96:443?type=ws&security=tls&encryption=none&fp=chrome&sni=zgtwylnhh.cc.cd&path=Telegram@WangCai2&host=zgtwylnhh.cc.cd&serviceName=&quicSecurity=none#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.206:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.30:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.52:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@94.183.185.96:443?encryption=none&security=tls&sni=zgtwylnhh.cc.cd&insecure=0&allowInsecure=0&type=ws&host=zgtwylnhh.cc.cd&path=Telegram#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@94.183.185.28:2053?encryption=none&security=tls&sni=zgtwylnhh.cc.cd&insecure=0&allowInsecure=0&type=ws&host=zgtwylnhh.cc.cd&path=Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
 vless://d1209ffb-c159-48d5-b40d-542ce11fc768@150.241.83.152:10121?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=apple.com&pbk=4DdA8dBVn5zB_UTbgBY45YqM0HU8zrjXYdzg3-wz5Rg&sid=9c2a7d4e5f18b6a3#%F0%9F%87%A8%F0%9F%87%A6%20Canada%2C%20Toronto%20%7C%20%5BBL%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@59.3.3.161:8443?encryption=none&security=tls&sni=ylnhh.cc.cd&type=ws&host=ylnhh.cc.cd&path=%2FTelegram#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.161:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.179:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-vless://9b1d61e1-22ff-4327-abf2-0e6cf1b5abd4@87.239.104.16:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=ads.x5.ru&pbk=zbYv3t9VgzBeh9kTydhdi7u9niwh-_LHa4xYc9Zl_1U&sid=2e752b0d4d15e0f9#%F0%9F%87%B9%F0%9F%87%B7%20Turkey%20%5B%2ACIDR%5D%20VK
-vless://9b1d61e1-22ff-4327-abf2-0e6cf1b5abd4@185.130.114.166:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=eh.vk.com&pbk=s_4YEPkqKT2ootnyc3PyNzw31TTVhrcmdpo1s78F6F4&sid=ff5c4c10ca44241a#%F0%9F%87%B1%F0%9F%87%B9%20Lithuania%20%5B%2ACIDR%5D%20VK
-# Date/Time: 2026-03-16 / 22:35 (Moscow)
-# profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Mobile-150-(2)
+vless://948fac3c-42bf-41a6-a5f9-704d36ff0d8d@194.87.245.253:443?encryption=none&security=tls&sni=snippet.danfeng.kozow.com&insecure=0&allowInsecure=0&type=ws&host=snippet.danfeng.kozow.com&path=%2Fdanfeng%3Fed%3D2560#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+# Date/Time: 2026-03-16 / 23:02 (Moscow)
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.246:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.16:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@68.64.179.96:443?type=ws&encryption=none&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2&headerType=none&quicSecurity=none&serviceName=&security=tls&fp=chrome&insecure=1&sni=ylnhh.cc.cd#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://42c5afe4-e14b-4fe3-b6d7-78d0c23d492b@188.225.57.78:10443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=randomized&sni=pimg.mycdn.me&pbk=fKLb3LN5Zfoz1Eg58ocDjHoQDjuJjixkChcybgsU1zI&sid=237561113ef32d46&spx=%2F#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D
+vless://42c5afe4-e14b-4fe3-b6d7-78d0c23d492b@188.225.57.78:1443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=randomized&sni=alfabank.ru&pbk=0M_hq99Vaiygfg0P3Xd0J6X-ljwQ58Ao3z_h_U9zQBI&sid=2698f4118fc6aebc&spx=%2F#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D
+# Количество: 23
+vless://a22f6494-f371-01f4-bad0-8df9594b8e45@109.120.188.115:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=max.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D%20VK
