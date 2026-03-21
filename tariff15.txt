@@ -1,17 +1,17 @@
 #profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 1
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.109:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.44:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.144:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-# Date/Time: 2026-03-21 / 11:58 (Moscow)
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@77.110.127.36:443?encryption=none&security=tls&sni=ylnhh.cc.cd&insecure=0&allowInsecure=0&type=ws&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2#%F0%9F%87%A8%F0%9F%87%A6%20Canada%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vless://00000000-0000-4000-8000-000000000000@23.187.72.183:520?encryption=none&security=tls&sni=sub.mot.ip-ddns.com&insecure=0&allowInsecure=0&type=ws&host=sub.mot.ip-ddns.com&path=%2F#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@82.117.84.249:443?&security=tls&fp=chrome&sni=ylnhh.cc.cd&type=ws&headerType=none&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@47.239.4.246:2053?&security=tls&fp=chrome&sni=ylnhh.cc.cd&type=ws&headerType=none&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.148:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@83.147.192.111:8443?encryption=none&security=tls&sni=ylnhh.cc.cd&insecure=0&allowInsecure=0&type=ws&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.196:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.49:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.79:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.28:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@89.169.53.88:443?encryption=none&security=tls&sni=ylnhh.cc.cd&insecure=0&allowInsecure=0&type=ws&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@152.32.171.162:443?encryption=none&security=tls&sni=ylnhh.cc.cd&insecure=0&allowInsecure=0&type=ws&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
 # profile-update-interval: 5
-vless://a22f6494-f371-03e8-bad0-8df9594b8e45@5.188.141.186:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D%20VK
-# Количество: 0
+vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@47.239.4.246:2053?encryption=none&security=tls&sni=ylnhh.cc.cd&insecure=0&allowInsecure=0&type=ws&host=ylnhh.cc.cd&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%2B%40WangCai2#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.213:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+vless://00000000-0000-4000-8000-000000000000@23.187.72.183:520?encryption=none&security=tls&sni=sub.mot.ip-ddns.com&insecure=0&allowInsecure=0&type=ws&host=sub.mot.ip-ddns.com&path=%2F#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://5f98c4f8-19f4-471d-8ed5-10c0550c0423@150.241.74.185:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=tunnel.vk-apps.com&fp=chrome&security=reality&pbk=cqsvMHPf2pc9Z54Q-apTtcYfesNjjPSecAKaKrsoL0Y&sid=4d94c4fb&packetEncoding=xudp#%F0%9F%87%AA%F0%9F%87%AA%20Estonia%2C%20Tallinn%20%7C%20%5BBL%5D
+vless://a22f6494-f371-1f40-bad0-8df9594b8e45@5.188.142.9:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#%F0%9F%8C%90%20Anycast-IP%20%5B%2ACIDR%5D%20VK
+vless://14b02e2a-8930-4afb-8412-ea4a4954ca5b@85.192.41.169:443?encryption=none&type=ws&security=tls&path=/Telegram🇨🇳+@WangCai2&host=ylnhh.cc.cd&fp=chrome&sni=ylnhh.cc.cd#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D
+# profile-update-interval: 5
 # profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Mobile-150-(2)
