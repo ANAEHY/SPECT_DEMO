@@ -1,32 +1,17 @@
 #profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 1
-vless://63499873-e7bb-4c2c-a22c-36b462773aa5@205.237.107.106:443?type=tcp&security=tls&flow=xtls-rprx-vision&sni=sub.sbrf-cdn342.ru#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D
-vless://cb627e19-cd7b-4613-a8c9-87722b23ce9a@23.137.249.110:20365?type=tcp&security=none&encryption=none#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%F0%9F%8C%90%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://bb5437cd-3a6c-4509-9d91-fbf40d5f36bb@151.236.114.141:8443?type=tcp&security=reality&encryption=none&fp=chrome&pbk=Ayk1qICtNc5Qr5F_G3u-PJeUikXvugkxQVX6SIKB_RM&sid=3bacab304bdda27a&sni=playercdn.cdnvideo.ru&spx=/#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5B%2ACIDR%5D%20CDN
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.80:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-vless://e928d85d-f223-07d0-a1d2-a56e9fbd50e0@89.208.230.171:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#%F0%9F%8C%90%20Anycast-IP%20%5B%2ACIDR%5D%20VK
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.31:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-# Количество: 11
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.18:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.217:38388?#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-vless://30115383-ed19-4bd2-9237-4a53ee5b5a9f@84.201.132.69:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=web.max.ru&pbk=1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs&sid=428ef87fd47a3a32#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20YA
-vless://948fac3c-42bf-41a6-a5f9-704d36ff0d8d@211.245.68.145:10088?&security=tls&fp=chrome&sni=snippet.danfeng.theworkpc.com&type=ws&headerType=none&host=snippet.danfeng.theworkpc.com&path=%2Fdanfeng%3Fed%3D2560#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://ac538155-d500-000a-bb71-3d2f8bb2fbc2@89.208.222.204:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=5post-gate.x5.ru&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20VK
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.28:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.17:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.197:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.168:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.155.132:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+# Количество: 10
+# profile-update-interval: 5
+# Date/Time: 2026-03-30 / 16:50 (Moscow)
+vless://c8d65a3a-5002-4dff-bfd6-d4b9ef90b9cc@fin-q9.duckdns.org:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&pbk=bf6djSt6q3txxHwDMcU8AkW-Zp7Fgtr1YZNAl0sYoy4&sid=5ee4be85b872889b&sni=fin-q9.duckdns.org#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%F0%9F%8C%90%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://948fac3c-42bf-41a6-a5f9-704d36ff0d8d@80.76.33.220:8443?encryption=none&security=tls&sni=snippet.danfeng.gv.uy&fp=random&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=snippet.danfeng.gv.uy&path=%2Fdanfeng#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.244:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.251:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
+# Количество: 150
+vless://2f5d1904-fb73-46e7-a1db-98630bde1797@85.192.32.4:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=rbc.ru&pbk=9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8&sid=d2c6d9f6e6e12bfe#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5B%2ACIDR%5D%20VK
+vless://dde7905b-88c1-48d2-b6b9-d943bd995198@51.250.26.165:11444?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&sni=cloudcdn-m9-6.cdn.yandex.net&pbk=5a1oVLGbzAXpLx4wqk9pAuMkKBEiLeTHzTRB1AR3XiA&sid=71e87186710e710e#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA
 vless://e928d85d-f223-0bb8-a1d2-a56e9fbd50e0@89.208.231.19:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=ads.x5.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20VK
-vless://ad2f20e5-4c08-4334-97f3-bde1ba717ca1@ru.gubdenvpn.space:443?security=reality&type=tcp&headerType=&path=&host=&flow=xtls-rprx-vision&sni=yandex.net&fp=&pbk=B8sjF1fGIYkJ2RDj_e4RHikh0U-OD0SJeaatEvAFUlI&sid=a0ec89768fb124c8#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
-vless://2ac7ab0e-4411-07d0-8dab-04ac36d3195f@89.208.230.171:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#%F0%9F%8C%90%20Anycast-IP%20%5B%2ACIDR%5D%20VK
-vless://c9486368-0f4a-4317-9fbb-d87ae4c45ccd@pro-ru-212.emrata.top:443?security=reality&sni=eh.vk.ru&pbk=AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D%20VK
-vless://0bbc7754-3894-000a-9945-20cf50c1c841@89.208.222.204:443?security=reality&encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=OCRYYq4e92sQ-wWFRX6WX9pdvuFBWOqybLhpSiv3nFA&sid=111111&sni=5post-gate.x5.ru#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20VK
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.141:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-ss://YWVzLTI1Ni1jZmI6WG44aktkbURNMDBJZU8lIyQjZkpBTXRzRUFFVU9wSC9ZV1l0WXFERm5UMFNW@103.186.154.139:38388#%F0%9F%87%BB%F0%9F%87%B3%20Vietnam%2C%20H%E1%BA%A3i%20D%C6%B0%C6%A1ng%20%7C%20%5BBL%5D
-# Количество: 2
-# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
-vless://b6c396d5-0edb-477e-9ac1-17322e1af748@tralalero.site:8443?security=reality&type=tcp&flow=xtls-rprx-vision&sni=rbc.ru&fp=random&pbk=_CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM&sid=f32140952ba18e18#%F0%9F%87%AE%F0%9F%87%B9%20Italy%20%5BSNI-RU%5D%20rbc.ru
-vless://825b6942-aec1-4158-9bb9-69f274754173@pl-dp-01.online:8443?security=reality&type=tcp&flow=xtls-rprx-vision&sni=rbc.ru&fp=random&pbk=9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8&sid=d2c6d9f6e6e12bfe#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5BSNI-RU%5D%20rbc.ru
-vless://e928d85d-f223-2710-a1d2-a56e9fbd50e0@89.208.228.139:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20VK
-vless://217db6b9-29ac-4a09-aa30-19c9464b596a@213.219.215.243:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=rbc.ru&pbk=9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8&sid=50e09046c0c00159#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5B%2ACIDR%5D%20VK
-vless://80fcf773-a7fa-07d0-b451-c00626f57603@79.137.174.243:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=ads.x5.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20VK
-vless://30115383-ed19-4bd2-9237-4a53ee5b5a9f@84.201.132.69:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs&sid=428ef87fd47a3a32#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%5B%2ACIDR%5D%20YA
-vless://dde7905b-88c1-48d2-b6b9-d943bd995198@5.188.142.74:11443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=66.img.avito.st&pbk=LXUbGk5ZESnejrnPqn0k_QHBXmcuEwSFYzITg0rGxQA&sid=71e87186710e710e#%F0%9F%87%AA%F0%9F%87%B8%20Spain%20%5B%2ACIDR%5D%20VK
+vless://fa0b84cc-b6a2-42b7-a277-a218f20dd5a2@85.192.32.4:8443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=random&sni=rbc.ru&pbk=9Y-_jCI3Z1x6SXK2tHdZ6V1CN9IJPNPnoxSW0cbXxD8&sid=50e09046c0c00159#%F0%9F%87%B5%F0%9F%87%B1%20Poland%20%5B%2ACIDR%5D%20VK
