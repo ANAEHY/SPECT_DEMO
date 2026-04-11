@@ -1,17 +1,31 @@
 #profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 1
-ss://bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI@103.181.177.88:443?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Bhost%3Dylnhh.us.ci%3Bpath%3D14b02e2a-8930-4afb-8412-ea4a4954ca5b%2F%3Fed%5C%3D2560%3Btls%3Bmux%3D0#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-# profile-title: 🏴 ЧЕРНЫЕ СПИСКИ 🏴 BLACK LISTS | Полная • Full | SS, Hy2, Vmess, Trojan
-hysteria2://qQe1z5kU8kN6SlKnDt9Ru3Qp@vpn-jp-007.fastervpn.world:443?insecure=1&sni=vpn-jp-007.fastervpn.world#%F0%9F%87%AF%F0%9F%87%B5%20Japan%2C%20Shibuya%20City%20%7C%20%5BBL%5D
-vless://64ea41bb-5bd7-4954-b12a-d311f4d6b5e3@5.178.101.11:3443?allowInsecure=0&alpn=http/1.1,h2&echfq=none&flow=&fp=chrome&host=tk1.potatosubge20.org&mode=auto&path=/xhttp&security=tls&sni=tk1.potatosubge20.org&type=xhttp#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.39.125.240:2087?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.35.211.44:2087?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.39.125.113:2096?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://d6fb3dd3-990f-4bef-8e45-a866c9362140@193.233.233.26:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.amd.com&fp=chrome&security=reality&pbk=7DBnPhcXc7B8dErqp5XK9JAym1GfFtTXSb1Ic53CX3g&sid=0fda#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.35.211.89:2096?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.35.211.124:443?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.39.125.13:2053?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
-# profile-update-interval: 5
-vless://fb73913c-9315-4595-8f92-488a2ceaf9a4@157.22.241.25:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=randomized&sni=goodcardboard.shop&pbk=rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
-# profile-update-interval: 5
-# Date/Time: 2026-04-11 / 23:22 (Moscow)
+hysteria2://7151e6b8-0d8e-4548-a9f2-af52ccc2cdfe@89.23.107.251:4433?insecure=1#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D
+vless://9785ba2b-92d5-4ddc-a2fd-041b000fe001@212.192.14.163:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=randomized&sni=goodcardboard.shop&pbk=rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
+vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.35.211.169:2087?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+# Количество: 0
+vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.35.211.119:2053?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://1c26ed16-45a1-4872-87ec-66225ec915cc@5.188.114.99:80?encryption=none&flow=xtls-rprx-vision&security=reality&sni=ads.x5.ru&fp=chrome&pbk=cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg&sid=2356d1ae4b&type=tcp#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
+trojan://trojan@152.53.45.251:8888?security=tls&sni=jflsjlaf.pages.dev&insecure=0&allowInsecure=0&type=ws&host=jflsjlaf.pages.dev&path=%2F#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://ce069292-c8bf-40dd-a6b1-87818a1e64e9@1.168.191.235:8443?fp=chrome&host=3-vud.pages.dev&path=/proxyip=ProxyIP.DE.owg.dpdns.org&security=tls&sni=3-vud.pages.dev&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://879860bd-c135-493d-a983-2265731467e6@212.192.14.153:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=randomized&sni=goodcardboard.shop&pbk=rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
+trojan://trojan@114.207.99.233:11434?security=tls&sni=jflsjlaf.pages.dev&type=ws&host=jflsjlaf.pages.dev&path=%2F#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.39.125.173:2096?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://26524cce-d514-4014-a426-365fb266a14d@43.165.195.160:443?encryption=none&security=tls&sni=gavorbhj.chinam.indevs.in&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=gavorbhj.chinam.indevs.in&path=%2Fdanfeng%3Fed%3D2560#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.35.211.186:2053?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+ss://bm9uZToxNGIwMmUyYS04OTMwLTRhZmItODQxMi1lYTRhNDk1NGNhNWI@78.40.216.169:443?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Bhost%3Dylnhh.us.ci%3Bpath%3D%2F14b02e2a-8930-4afb-8412-ea4a4954ca5b%2F%3Fed%5C%3D2560%3Btls%3Bmux%3D0#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://06ef598c-1555-4887-b3f9-08214a2f6792@45.153.246.204:49230?fp=chrome&host=2026.hhhhh.eu.org&path=%2F45.153.246.204%3A49230&security=tls&sni=2026.hhhhh.eu.org&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://d4ac8ef7-b18c-46c3-ad40-373e28558b33@157.22.241.25:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=randomized&sni=goodcardboard.shop&pbk=rDPZZOBMmBb_mNKPEewzp9Uu6zkGrP7XOVpnRzetXDc&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
+ss://bm9uZTozZTk2ZWY3ZC04NjM3LTQyYzItYWM3My03NTE4MjE5NmU3NTU@5.253.189.215:443?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Bhost%3Dmfvpn.fuchen.indevs.in%3Bpath%3D3e96ef7d-8637-42c2-ac73-75182196e755%2F%3Fed%5C%3D2560%3Btls%3Bmux%3D0#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.35.211.195:443?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://6461860a-d367-4d47-8e82-7d8e1047a152@8.39.125.128:8443?fp=chrome&host=aier.eu.cc&path=%2F&security=tls&sni=aier.eu.cc&type=ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%5BIPv6%5D%20%7C%20%5BBL%5D
+vless://7a36ff3b-9571-407c-95c0-9f6d57177c20@87.121.38.33:59999?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=x0t1otRGBv62aJKGNbsQRJGtwh-sp6CEScFS6S8y3EM&security=reality&sid=9c77d4b3&sni=yastatic.net&type=tcp#%F0%9F%87%B7%F0%9F%87%B8%20Serbia%20%5BSNI-RU%5D%20yastatic.net
+hysteria2://123456789StrongPass@144.31.224.14:443?sni=eh.vk.com&insecure=1&allowInsecure=1#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%5BSNI-RU%5D%20eh.vk.com
+vless://59b3c78b-2952-49d4-b5bc-a1f8a9dfd2e8@85.208.208.196:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=vk.com&fp=chrome&pbk=vNLkPJu2oVaP6xfzTrEN3Xu9jFF2TVOO6zTyqT1yOlk&sid=37588b10&packetEncoding=xudp#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5BSNI-RU%5D%20vk.com
+# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
+vless://322ffd77-9adc-4e10-8302-a8bcc14555a0@138.124.31.57:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=max.ru&fp=qq&pbk=jkJjVvjbZmS5Nq-5Oz7GTRSZ_qXfChO7b5Ee8yYglzw&sid=23c0b9cc8395ab36#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5BSNI-RU%5D%20max.ru
+vless://f2b3904e-034b-4368-9c7f-9bd7dbb0a6d9@84.201.173.177:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=tunnel.vk-apps.com&pbk=Fhii1Ui9Pk35hUS28za8SnL5yb7Lz6FXdv-J0xF8jBM&sid=6d615073#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5B%2ACIDR%5D%20YA
+vless://5e5d2fda-e4f6-4750-a5d7-7ae2a9e5d0c5@51.250.117.39:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=tunnel.vk-apps.com&pbk=EzS6YGgfE-F0jR0-xXB5rVBh-1oNSC17oquln8hK4Wo&sid=dce3019e#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5B%2ACIDR%5D%20YA
+vless://c41a8b2a-f8bc-4d4e-a924-5a4c2599a56b@51.250.117.39:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=tunnel.vk-apps.com&pbk=EzS6YGgfE-F0jR0-xXB5rVBh-1oNSC17oquln8hK4Wo&sid=dce3019e#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5B%2ACIDR%5D%20YA
+vless://f2b3904e-034b-4368-9c7f-9bd7dbb0a6d9@84.201.162.98:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=tunnel.vk-apps.com&pbk=dOvm6McMxIp6a9fzLeLRKV0hU-wadCwE3pzNtyPJvWA&sid=c43649e9#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5B%2ACIDR%5D%20YA
+vless://4616fa35-e575-46a6-b6b4-690f58162387@51.250.117.39:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=EzS6YGgfE-F0jR0-xXB5rVBh-1oNSC17oquln8hK4Wo&sid=dce3019e&sni=tunnel.vk-apps.com#%F0%9F%87%AB%F0%9F%87%B7%20France%20%5B%2ACIDR%5D%20YA
