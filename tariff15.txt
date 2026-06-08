@@ -1,31 +1,17 @@
 #profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 1
-hysteria2://xn7dkQ0HsgfElvy0@turovnet.duckdns.org:32000?security=tls&fm=%7B%7D&sni=turovver.duckdns.org#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%28Innenstadt%20I%29%20%7C%20%5BBL%5D
-hysteria2://github.com%2FAlvin9999-newpac%2Ffanqiang@62.210.29.98:64772?insecure=1&sni=bing.com#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vless://cabbfe13-038b-4dbb-9c45-5079c829abfa@199.232.197.131:80?path=/&security=&encryption=none&host=max-de1.global.ssl.fastly.net&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Limburg%20an%20der%20Lahn%20%7C%20%5BBL%5D
-vless://TIGNAL-CRYPTO@151.101.65.57:80?type=xhttp&security=none&path=%2F&host=InternetAzadRobot07gt745.global.ssl.fastly.net&mode=auto#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Roubaix%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vless://1014818b-5c5c-46b1-98fe-eaf8d5eba642@ru-vk-4.1001notes.ru:443?type=xhttp&security=tls&sni=ru-vk-4.1001notes.ru&path=/vk&mode=packet-up#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D
-vless://cabbfe13-038b-4dbb-9c45-5079c829abfa@speedtest.net:80?path=%2F&security=none&encryption=none&host=max-gb1.global.ssl.fastly.net&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vless://1014818b-5c5c-46b1-98fe-eaf8d5eba642@de-xh-01.hpdata.click:443?type=xhttp&headerType=none&security=tls&encryption=none&sni=de-xh-01.hpdata.click&fp=chrome&path=%2Fvk&insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%5B%2ACIDR%5D
-vmess://eyJhZGQiOiI5My45My44OS4xMTciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6InJlbmRlcmVyLXN0cmVhbS0xLTQxMS5taXJyYS5ub3ciLCJpZCI6ImRmOWM5MzU1LWIwMmMtNGMxMi05MDlkLTBkYmViNzI1ZDUyYiIsIm5ldCI6IndzIiwicGF0aCI6Ii9hcGkvdjEvZ3B1LXN0cmVhbS9zb2NrZXQiLCJwb3J0IjoiNDQzIiwicHMiOiLwn4ez8J+HsSBUaGUgTmV0aGVybGFuZHMgfCBbKkNJRFJdIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6IjIifQ==
-vless://e7cb547e-5a74-4695-9019-a2c93e7593ea@ru59.whost-solutions.ru:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k&security=reality&sid=&sni=ru21.whost-solutions.ru&type=#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D
-# Количество: 99
-vless://TOFAN-TRADE@fastly.com:80?type=xhttp&security=none&path=/&host=InternetAzadRobot55yy182.global.ssl.fastly.net&mode=auto#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%287th%20Arrondissement%29%20%7C%20%5BBL%5D
-vless://e7cb547e-5a74-4695-9019-a2c93e7593ea@ru40.whost-solutions.ru:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k&security=reality&sid=&sni=ru21.whost-solutions.ru&type=#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%87%B8%F0%9F%87%AA%20%7C%20%5BBL%5D
-vless://e7cb547e-5a74-4695-9019-a2c93e7593ea@ru54.whost-solutions.ru:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k&security=reality&sid=&sni=ru21.whost-solutions.ru&type=#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%87%B8%F0%9F%87%AA%20%5B%2ACIDR%5D
-hysteria2://2f4c3fc5-8fa2-4576-a583-8f98a6026887@hkt.ccwink.cc:56309?insecure=1&sni=hkt.ccwink.cc#%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong%2C%20Central%20%7C%20%5BBL%5D
-vless://17c5fb47-99e6-0028-aed9-3ed239b80047@uk.monkeyisland.xyz:443?type=tcp&headerType=none&security=reality&encryption=none&sni=uk.monkeyisland.xyz&fp=firefox&pbk=2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4&sid=2ce837f65ba41351&flow=xtls-rprx-vision#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D
-vless://TIGNAL-CRYPTO@151.101.193.57:80?encryption=none&security=none&type=xhttp&host=InternetAzadRobot44xd894.global.ssl.fastly.net&path=/&mode=auto#%F0%9F%87%AE%F0%9F%87%B3%20India%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vless://1014818b-5c5c-46b1-98fe-eaf8d5eba642@ch-xh-01.hpdata.click:443?encryption=none&security=tls&sni=ch-xh-01.hpdata.click&fp=chrome&insecure=0&allowInsecure=0&type=xhttp&path=%2Fvk&mode=packet-up#%F0%9F%87%A8%F0%9F%87%AD%20Switzerland%2C%20Zurich%20%7C%20%5BBL%5D
-trojan://4f4d1167-ef14-4304-9bce-0740472503ef@188.253.12.15:41943/?type=tcp&security=tls&sni=az.01.naiun.bilibili.com&allowInsecure=1#%F0%9F%87%A6%F0%9F%87%BF%20Azerbaijan%2C%20Baku%20%7C%20%5BBL%5D
+trojan://4f4d1167-ef14-4304-9bce-0740472503ef@188.253.12.95:48697/?type=tcp&security=tls&sni=gh.01.naiun.bilibili.com&allowInsecure=1#%F0%9F%87%AC%F0%9F%87%AD%20Ghana%2C%20Accra%20%7C%20%5BBL%5D
+trojan://4f4d1167-ef14-4304-9bce-0740472503ef@155.117.198.89:48697/?type=tcp&security=tls&sni=gh.01.naiun.bilibili.com&allowInsecure=1#%F0%9F%87%AC%F0%9F%87%AD%20Ghana%2C%20Accra%20%7C%20%5BBL%5D
+trojan://4f4d1167-ef14-4304-9bce-0740472503ef@188.253.12.90:41943/?type=tcp&security=tls&sni=az.01.naiun.bilibili.com&allowInsecure=1#%F0%9F%87%A6%F0%9F%87%BF%20Azerbaijan%2C%20Baku%20%7C%20%5BBL%5D
+vless://10484bee-8516-400a-9b1e-efb5144ad324@31.77.201.3:7443?type=tcp&headerType=none&security=reality&encryption=none&sni=icloud.com&fp=random&pbk=5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI&sid=d82fb387&flow=xtls-rprx-vision#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20Martlesham%20%28Martlesham%20Heath%29%20%7C%20%5BBL%5D
+vless://6585a62b-4d8b-48cc-bdad-e2542504d748@45.131.4.173:8443?encryption=none&type=xhttp&mode=auto&host=Itsrezu2.dr-ping.com&path=/&security=tls&fp=chrome&sni=Itsrezu2.dr-ping.com&alpn=h2,http/1.1#%F0%9F%87%A8%F0%9F%87%BE%20Cyprus%2C%20Famagusta%20%7C%20%5BBL%5D
+vless://0058c215-ab1e-400c-a403-b5b2fda7e846@speedtest.net:80?type=ws&security=none&fp=chrome&path=/&host=max-de1.global.ssl.fastly.net#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Limburg%20an%20der%20Lahn%20%7C%20%5BBL%5D
+vless://InternetAzadRobot@fastly.com:80?mode=auto&path=/tofan&security=none&encryption=none&host=sv6tignal.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AE%F0%9F%87%B9%20Italy%2C%20Milan%20%7C%20%5BBL%5D
+vless://1014818b-5c5c-46b1-98fe-eaf8d5eba642@uk-xh-01.hpdata.click:443?type=xhttp&security=tls&sni=uk-xh-01.hpdata.click&path=/vk&mode=packet-up#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D
+# profile-update-interval: 1
+vless://7b241232-208d-4d36-857e-913f91b044f4@uk.noooo.win:443?type=tcp&security=tls&encryption=none&flow=xtls-rprx-vision&sni=api-6a20f558.noooo.win#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D
+vless://e7cb547e-5a74-4695-9019-a2c93e7593ea@ru48.whost-solutions.ru:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k&security=reality&sid=&sni=ru21.whost-solutions.ru&type=#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%87%AB%F0%9F%87%AE%20%7C%20%5BBL%5D
+vless://14ca5431-b1e3-4e70-909a-c8ed2b770adc@84.201.166.160:443?encryption=none&type=grpc&security=tls&mode=gun&serviceName=%2Fsequre%2Fgrpc%2F&fp=edge&sni=95.85.246.14.speed-storage.ru#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A7%F0%9F%87%B7%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%B5%F0%9F%87%B1%20%5B%2ACIDR%5D%20YA
+# Date/Time: 2026-06-08 / 23:48 (Moscow)
+# profile-update-interval: 1
 # Количество: 0
-trojan://4f4d1167-ef14-4304-9bce-0740472503ef@103.177.136.44:46424/?type=tcp&security=tls&sni=de.01.naiun.bilibili.com&allowInsecure=1#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D
-# Количество: 2
-# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
-vless://ef6faa53-d230-4e35-a071-e38224d9126f@31.130.130.168:443?security=reality&encryption=none&pbk=PNtfWIdwZkgsP4XJGdgrEibPecaA_-uV1EzVewshgXE&headerType=none&fp=chrome&spx=%2FqLhKPUoXfr67gnp&type=tcp&flow=xtls-rprx-vision&sni=yandex.ru&sid=872f0656fc1196#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%20%5BSNI-RU%5D%20yandex.ru
-vless://28cee14e-a124-4c9f-88e2-fcb6c1304ea3@31.76.50.109:443?type=tcp&security=reality&sni=a.wb.ru&fp=firefox&pbk=Ueqd3mFmtmBODNPEA2zOnS1L3FrcS0bLweBZQW5xmmw&sid=6069ba5ecbf75abb#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20%5BSNI-RU%5D%20a.wb.ru
-vless://cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4@89.208.208.92:7443?encryption=none&type=grpc&security=reality&mode=gun&serviceName=grpc&fp=chrome&sni=loadtest.dev.urent.ru&pbk=_AXs-QnufIq918tbb2pwM3MDbe7kQ6i0cIHDMLwPmGs&sid=3210e0eee6605048#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%87%AC%F0%9F%87%A7%20%5B%2ACIDR%5D%20VK
-# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
-vless://6c6bb37a-3315-45bc-88d6-0fbba043c07f@87.239.108.241:443?encryption=none&type=tcp&security=reality&fp=chrome&sni=api.cockroachservice.ru&pbk=EZ9ZUwrabGCJfowEvD4fI0ANMsxYh7hchEAbsnOTl0s&sid=803367e3aceaa5e1#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20VK
-vless://6c6bb37a-3315-45bc-88d6-0fbba043c07f@87.239.108.241:443?encryption=none&type=tcp&security=reality&fp=random&sni=api.cockroachservice.ru&pbk=EZ9ZUwrabGCJfowEvD4fI0ANMsxYh7hchEAbsnOTl0s&sid=803367e3aceaa5e1#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20VK
-# Количество: 6
