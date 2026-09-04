@@ -1,27 +1,17 @@
 #profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 1
-trojan://kakashka13222@5.249.164.28:25615?allowInsecure=1&alpn=http%2F1.1&host=op-1.firecone.eu&path=%2Ffemboyporn--femboyporn--femboyporn--femboyporn%2Ffree-trojan-node%2Fonly-smux-supported&security=tls&sni=op-1.firecone.eu&type=ws&fp=safari#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20M%C3%BCnster%20%7C%20%5BBL%5D
-vless://b2043d16-2dcc-4813-a2a6-180cf0bd1a91@46.8.209.137:18082?encryption=none&extra=null&mode=auto&path=%2Fapi%2Fv3%2Fevents&pbk=a1MdDR-BBYGSzhVAlLdOIPXUWbTRz_YAT_31hEcVe2o&security=reality&sid=5f6af0122209fc10&sni=royalehosting.net&type=xhttp&fp=ios#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%5B%2ACIDR%5D
-# RU: Эта подписка может содержать Trojan/Hysteria2/Hy2 с legacy-параметрами insecure=1 или allowInsecure=1.
-vless://1ff9ceea-7008-4c0e-a832-32a0c81f0c46@laglovo-nivare.rivetsmith.net:443?security=reality&encryption=none&sni=laglovo-nivare.rivetsmith.net&pbk=qLS4d6euX1lkM7W1PJk2F_aNp9dDa75FlgR4uWRW9y4&sid=ec26905968745f40&flow=xtls-rprx-vision&fp=qq#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
-vless://78a5dd29-baac-4e4d-b9bd-a3a722bb317a@178.250.157.206:443?encryption=none&flow=xtls-rprx-vision&pbk=w-7BT5ZSqB0B25D5_c5BOv59U1v8LUc-gx2HNF7kZQQ&security=reality&sid=bff30c0187d4ee2b&sni=xuvamom-virilol.thistlemeadow.me&type=tcp&fp=android#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5B%2ACIDR%5D
-hysteria2://9c5be37406b6584005b8de0ee3734dd9@140.238.43.0:50160?insecure=1&sni=www.bing.com#%F0%9F%87%AF%F0%9F%87%B5%20Japan%2C%20Inzai%20%28Otsuka%29%20%7C%20%5BBL%5D
-vless://89bb80a2-dfc9-4f23-8026-40d58dd53026@83.168.88.40:443?encryption=none&type=grpc&security=reality&sni=optim.tildacdn.pub&pbk=unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE&serviceName=ebl&fp=safari#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vless://89bb80a2-dfc9-4f23-8026-40d58dd53026@186.246.0.111:443?encryption=none&type=grpc&security=reality&sni=optim.tildacdn.pub&pbk=unNROkbh95ZZNHzG2RIkgrFftOLldNH0ccmtW63CziE&serviceName=ebl&fp=android#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%5B%2ACIDR%5D
-vless://de27291c-15a9-4256-9ba7-ad517569877e@18.239.134.69:80?security=false&type=ws&headerType=none&host=d2e1v87ko56lyw.cloudfront.net%3Aassets.opensignal.com&path=%2F&fp=safari#%F0%9F%87%B9%F0%9F%87%AD%20Thailand%2C%20Udon%20Thani%20%7C%20%5BBL%5D
-vless://a817d012-0eeb-4b13-9f8e-0269e939d6f6@us01.botovod.space:8021?security=reality&encryption=none&sni=video.yandex.ru&pbk=QV92PYZ07ryeciKT4zkihDa9h-Swv9npq1mgF6dhgnc&sid=3b9ca2bc82d2c603&flow=xtls-rprx-vision&fp=edge#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Sulphur%20Springs%20%7C%20%5BBL%5D
-vless://1ff9ceea-7008-4c0e-a832-32a0c81f0c46@laglovo-nivare.rivetsmith.net:443?security=reality&encryption=none&sni=laglovo-nivare.rivetsmith.net&pbk=qLS4d6euX1lkM7W1PJk2F_aNp9dDa75FlgR4uWRW9y4&sid=ec26905968745f40&flow=xtls-rprx-vision&fp=qq#%F0%9F%87%B7%F0%9F%87%BA%20Russia%2C%20Moscow%20%7C%20%5BBL%5D
-vless://1ff9ceea-7008-4c0e-a832-32a0c81f0c46@laglovo-nivare.rivetsmith.net:443?security=reality&encryption=none&sni=laglovo-nivare.rivetsmith.net&pbk=qLS4d6euX1lkM7W1PJk2F_aNp9dDa75FlgR4uWRW9y4&sid=ec26905968745f40&flow=xtls-rprx-vision&fp=edge#%F0%9F%87%B7%F0%9F%87%BA%20Russia%2C%20Moscow%20%7C%20%5BBL%5D
-vless://0678ed07-980a-49c1-9066-05caec654967@fi-xh01.tcp-reset-club.net:443?encryption=none&mode=packet-up&path=%2Fassets%2Fv2%2Fpkg&pbk=mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg&security=reality&sid=f79448a30d&sni=s3.netavex.com&type=xhttp&fp=edge#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vless://0678ed07-980a-49c1-9066-05caec654967@fi-xh01.tcp-reset-club.net:443?encryption=none&mode=packet-up&path=%2Fassets%2Fv2%2Fpkg&pbk=mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg&security=reality&sid=f79448a30d&sni=s3.netavex.com&type=xhttp&fp=android#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-hysteria2://H7mP2xY9kJ4nQ8wR5tF6vB3z@vpn-au-002.fastervpn.world:443?insecure=1&sni=t.me&type=tcp&allowInsecure=1&upmbps=10&downmbps=50#%F0%9F%87%A6%F0%9F%87%BA%20Australia%2C%20Sydney%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vless://0678ed07-980a-49c1-9066-05caec654967@fi-xh01.tcp-reset-club.net:443?encryption=none&mode=packet-up&path=%2Fassets%2Fv2%2Fpkg&pbk=mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg&security=reality&sid=f79448a30d&sni=s3.netavex.com&type=xhttp&fp=chrome#%F0%9F%87%AB%F0%9F%87%AE%20Finland%2C%20Helsinki%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-vmess://eyJhZGQiOiJyZW5kZXJlci1zdHJlYW0tMi02Mi5taXJyYS5ub3ciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiZGI1MGEyMGUtN2ZmNS00ZTcwLTk0OGYtMTdjYzljYTdjMTU0IiwiaW5zZWN1cmUiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiL2FwaS92MS9ncHUtc3RyZWFtL3NvY2tldCIsInBjcyI6IiIsInBvcnQiOiI0NDMiLCJwcyI6IvCfh6nwn4eqIEdlcm1hbnkgfCBbKkNJRFJdIiwic2N5IjoiYXV0byIsInNuaSI6InJlbmRlcmVyLXN0cmVhbS0yLTYyLm1pcnJhLm5vdyIsInRscyI6InRscyIsInR5cGUiOiItLS0iLCJ2IjoiMiIsInZjbiI6IiJ9
-trojan://kakashka13222@5.249.164.28:25615?allowInsecure=1&alpn=http%2F1.1&host=op-1.firecone.eu&path=%2Ffemboyporn--femboyporn--femboyporn--femboyporn%2Ffree-trojan-node%2Fonly-smux-supported&security=tls&sni=op-1.firecone.eu&type=ws&fp=edge#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20M%C3%BCnster%20%7C%20%5BBL%5D
-vless://de27291c-15a9-4256-9ba7-ad517569877e@18.239.134.69:80?encryption=none&security=none&type=ws&host=d2e1v87ko56lyw.cloudfront.net%3Aassets.opensignal.com&path=%2F&fp=ios#%F0%9F%87%B9%F0%9F%87%AD%20Thailand%2C%20Udon%20Thani%20%7C%20%5BBL%5D
-vless://de27291c-15a9-4256-9ba7-ad517569877e@18.239.134.69:80?security=false&type=ws&headerType=none&host=d2e1v87ko56lyw.cloudfront.net%3Aassets.opensignal.com&path=%2F&fp=firefox#%F0%9F%87%B9%F0%9F%87%AD%20Thailand%2C%20Udon%20Thani%20%7C%20%5BBL%5D
-# Количество: 1
-# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
-hysteria2://29c2de1cf5408523ed4d3252199079d2@108.59.244.158:443?insecure=1&sni=vk.ru#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%5BSNI-RU%5D%20vk.ru
+hysteria2://8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3@deu0003ntrhy01.tcp-reset-club.net:443?insecure=1&sni=deu0003ntrhy01.tcp-reset-club.net#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%28Innenstadt%20I%29%20%7C%20%5BBL%5D
+# profile-title: 🏴 ЧЕРНЫЕ СПИСКИ 🏴 BLACK LISTS | Полная • Full | SS, Hy2, Vmess, Trojan
+trojan://kakashka13222@194.9.172.236:1105?security=tls&sni=194.9.172.236&insecure=1&allowInsecure=1&type=tcp&headerType=none&fp=safari#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Lyon%20%7C%20%5BBL%5D
+# profile-update-interval: 1
 # Количество: 0
+# profile-title: 🏴 ЧЕРНЫЕ СПИСКИ 🏴 BLACK LISTS | Полная • Full | VLESS
 # For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
+# Date/Time: 2026-09-04 / 18:04 (Moscow)
+# profile-title: 🏴 ЧЕРНЫЕ СПИСКИ 🏴 BLACK LISTS | Mobile-150
+# profile-update-interval: 1
+vmess://eyJ2IjoiMiIsInBzIjoi8J+HrfCfh7AgSG9uZyBLb25nLCBIb25nIEtvbmcgfCBbQkxdIiwiYWRkIjoibnljcWcxOXprd2FjcG0xYi52LjNkbnMudmlwIiwicG9ydCI6IjQ0MyIsImlkIjoiZjIzYmI0MjdjMWY5NDM3Mzg3NmMyZjQzZTlmNzkwZjMiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJwYXRoIjoiL3dzLXZtZXNzIiwidGxzIjoidGxzIiwiaG9zdCI6IiIsInNuaSI6IiIsImFscG4iOiIiLCJmcCI6IiJ9
+vless://76186f1e-3062-4a2b-98c2-fab3c61a9511@188.124.47.34:9891?encryption=none&pbk=Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0&security=reality&serviceName=grpc-tunnel&sid=aabbccdd&sni=dl.google.com&type=grpc&fp=edge#%F0%9F%87%A8%F0%9F%87%BF%20Czechia%20%7C%20%5B%2ACIDR%5D
+vless://dfddb977-5fef-470a-8ab6-96bcd7a83d00@ruwl.skskks.top:443?encryption=none&security=tls&sni=ruwl.skskks.top&alpn=http%2F1.1&type=ws&host=ruwl.skskks.top&path=%2Fws&fp=edge#%F0%9F%87%A9%F0%9F%87%AA%20Germany%20%7C%20%5B%2ACIDR%5D
+# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
+# Количество: 0
