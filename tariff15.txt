@@ -1,17 +1,26 @@
 #profile-title: base64:8J+ktCBTUEVDVEVSIFVQTiDwn5Ss
 #profile-update-interval: 1
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg@134.195.101.117:2377?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3D%28Telegram%F0%9F%87%A8%F0%9F%87%B3+%40VPNine1%29fa03bb5%3A137563#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
-# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
-trojan://22d01684-0a1f-4fdc-a275-8bac5839ebc0@45.205.27.78:10443?security=tls&sni=45.205.27.78&allowInsecure=1&insecure=1&type=tcp&fp=safari#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Los%20Angeles%20%7C%20%5BBL%5D
-vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@cool-place.failspace.top:443?type=tcp&security=tls&sni=cool-place.failspace.top&alpn=h2&encryption=none&flow=xtls-rprx-vision&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Halfweg%20%7C%20%5BBL%5D
-vless://24f9d11d-ceca-4f75-93ca-ad143ca18b28@84.32.184.221:443?encryption=none&security=tls&sni=24f9d11d.ferrin.uk&fp=random&type=xhttp&path=%2Ffr&host=api.ferrin.uk&mode=auto#%F0%9F%87%AB%F0%9F%87%B7%20France%2C%20Paris%20%7C%20%5BBL%5D
-vless://24f9d11d-ceca-4f75-93ca-ad143ca18b28@89.41.181.163:443?encryption=none&extra={"xmux":{"maxConnections":3,"hMaxReusableSecs":"1140-1260"}}&fp=firefox&host=api.ferrin.uk&path=/uk&security=tls&sni=24f9d11d.ferrin.uk&type=xhttp#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%2C%20London%20%7C%20%5BBL%5D
-vless://51f43f39-bb49-4be2-9ab1-9dd1ef9968e6@84.32.184.221:443?encryption=none&extra={"xmux":{"maxConnections":3,"hMaxReusableSecs":"1140-1260"}}&fp=firefox&host=api.ferrin.uk&security=tls&sni=6ac21b76-51f43f39.ferrin.uk&type=xhttp#%F0%9F%87%A9%F0%9F%87%AA%20Germany%2C%20Frankfurt%20am%20Main%20%7C%20%5BBL%5D
-vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.249.98:443?type=tcp&security=tls&flow=xtls-rprx-vision&fp=firefox&sni=pol-pol-poland.failspace.top#%F0%9F%87%B5%F0%9F%87%B1%20Poland%2C%20Warsaw%20%7C%20%5BBL%5D
-vless://71e9e770-bfc6-11f1-8b5c-54db13ea7d40@172.86.105.224:443?flow=xtls-rprx-vision&fp=firefox&pbk=n25FmewpAEsvLl9Vr0bRFcz044f4IE7orWeWOzu8rwk&security=reality&sni=www.nvidia.com&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%2C%20Staten%20Island%20%7C%20%5BBL%5D
-vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@50.7.120.165:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=cool-place.failspace.top&type=tcp&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Halfweg%20%7C%20%5BBL%5D
+vless://8a180a9e-3218-4140-bfd3-56cf230d27f8@50.7.220.148:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&security=tls&sni=xn--80aksgi6f.xn----ctbzfboapgel4j.xn--p1ai&type=tcp#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Halfweg%20%7C%20%5BBL%5D
+vless://79ccb156-bfc6-11f1-9811-525400d1d4f7@31.77.114.200:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=tradingview.com&fp=random&pbk=USxaWDRKvJlZ-aHR-OGBT2XwVas2j4_1rhZCCfVNCBY&type=tcp#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Eygelshoven%20%7C%20%5BBL%5D
+trojan://5931134d1cde66bf83a54acdfebe7ab2@47.250.84.25:443?allowInsecure=1&insecure=1&type=tcp&security=tls&fp=firefox#%F0%9F%87%B2%F0%9F%87%BE%20Malaysia%2C%20Kuala%20Lumpur%20%7C%20%5BBL%5D
+vless://5117ad77-cd9a-46e9-995b-b601b0b5e435@176.53.162.90:443?encryption=none&security=tls&sni=trust-shell-qe1.cdn.cachefleet.com&alpn=h2&type=grpc&serviceName=3d7f80c943d676f3&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D
 vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@cool-place.failspace.top:443?type=tcp&security=tls&sni=cool-place.failspace.top&fp=firefox&alpn=h2&encryption=none&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Halfweg%20%7C%20%5BBL%5D
-hysteria2://f317b5d6-d399-4d3d-a051-89d674ae953c@msk.frkn.org:443?security=tls&sni=msk.frkn.org&alpn=h3&insecure=0#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
+trojan://M7v%25w11Se%2A@34.101.126.150:443?allowInsecure=1&security=tls&sni=qfdfsg.wsone.icu&fp=edge#%F0%9F%87%AE%F0%9F%87%A9%20Indonesia%2C%20Jakarta%20%7C%20%5BBL%5D
+vless://9d672694-c146-422e-b3b5-3717a38a0fcc@8.47.69.0:2053?security=tls&type=ws&sni=fr.api-music-fa.com&path=%2Fapi%2Fvoip%2Fupdates%2Fstatic%2Ffr2035&host=fr.api-music-fa.com&fp=chrome#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20%7C%20%5BBL%5D
+vless://df53b6c2-8005-475c-9eb9-74e1be785dc8@2.27.71.48:443?encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=FTB4bvTP-3JAbScj_vvkIOPFGjtN2TaNTUfeY-Ew8EU&security=reality&sid=4d767145&sni=addons.mozilla.org&type=tcp#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Amsterdam%20%7C%20%5BBL%5D
+# Количество: 23
+vless://55ccbeb5-0bf4-4e4d-afcb-23c038e73e00@177.1.186.117:443?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&sni=rcge.67resserv67.info&fp=chrome&pbk=Dx2F6ThyTXQpu07q1cECPCWBpQwWGNWy1WecyCI7ejA&sid=29455a3a790acbd0&spx=/&allowInsecure=1#.%F0%96%A5%94%20%DD%81%20%CB%96%D6%B4%F0%9F%9B%B8%E0%BC%84%CB%96%C2%B0.%20%7C%20%5BBL%5D
+vless://d342d11e-d424-4583-b36e-524ab1f0afa4@175.29.23.179:443?type=ws&security=tls&fp=chrome&sni=fzo5i.ir46.90k.hh.ov0.kdns.fr&host=fzo5i.ir46.90k.hh.ov0.kdns.fr#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%87%AE%F0%9F%87%AA%20%7C%20%5BBL%5D
+hysteria2://f317b5d6-d399-4d3d-a051-89d674ae953c@msk.frkn.org:443?alpn=h3#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%7C%20%F0%9F%8C%90%20%5B%2ACIDR%5D
+vless://cd3bb7d9-7df3-4644-ac05-c260990ac277@cool-place.failspace.top:443?type=tcp&security=tls&sni=cool-place.failspace.top&alpn=h2&encryption=none&flow=xtls-rprx-vision&fp=qq#%F0%9F%87%B3%F0%9F%87%B1%20The%20Netherlands%2C%20Halfweg%20%7C%20%5BBL%5D
+vless://5117ad77-cd9a-46e9-995b-b601b0b5e435@176.53.162.90:443?encryption=none&security=tls&sni=trust-shell-qe1.cdn.cachefleet.com&alpn=h2&type=grpc&serviceName=3d7f80c943d676f3&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg@134.195.101.117:2377?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3D%28Telegram%F0%9F%87%A8%F0%9F%87%B3+%40VPNine1%29fa03bb5%3A137563#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0MHNybWR4cm0zeHlqbnZxejlld2x4YjJteXE3cmp1dg@134.195.101.118:2377?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3D%28Telegram%F0%9F%87%A8%F0%9F%87%B3+%40VPNine1%299f6b1e7%3A141612#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
 vless://5117ad77-cd9a-46e9-995b-b601b0b5e435@176.53.162.90:443?encryption=none&security=tls&sni=trust-shell-qe1.cdn.cachefleet.com&alpn=h2&type=grpc&serviceName=3d7f80c943d676f3&fp=firefox#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%7C%20%F0%9F%8C%90%20%7C%20%5B%2ACIDR%5D
-# profile-title: 🏳️ БЕЛЫЕ СПИСКИ 🏳️ WHITE LISTS | CIDR | Только VK, Yandex, CDNvideo, Beeline
-# profile-update-interval: 1
+vless://4b21fbc7-00c2-4665-9788-02153832f9e5@8.47.69.0:8443?encryption=none&security=tls&sni=v2ray.aizgl.com&type=ws&host=v2ray.aizgl.com&path=%2Fxray-ws#%F0%9F%8C%90%20Anycast-IP%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20%7C%20%5BBL%5D
+trojan://M7v%25w11Se%2A@qfdfsg.wsone.icu:443?allowInsecure=1&type=tcp&security=tls&sni=qfdfsg.wsone.icu&fp=qq#%F0%9F%87%AE%F0%9F%87%A9%20Indonesia%2C%20Jakarta%20%7C%20%5BBL%5D
+trojan://f8b-U5TxjNRYKLvU0Js_6YeMCdj_82km@cz-musicc.moritech.net:443/?type=grpc&serviceName=grpcbeast&security=tls&alpn=h2&fp=firefox#%F0%9F%87%A8%F0%9F%87%BF%20Czechia%2C%20Prague%20%7C%20%5BBL%5D
+# Количество: 0
+# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
+# Количество: 0
+# For more info and VPN-configs - visit: www.github.com/igareck/vpn-configs-for-russia
